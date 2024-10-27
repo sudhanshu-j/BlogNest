@@ -116,6 +116,8 @@ To run TechTales on your local machine, follow these steps:
 
 Explore the various sections of the website and engage with the content. You can subscribe to the newsletter, leave comments, and follow us on social media for updates.
 
+## ScreenShots
+
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to TechTales, please follow these guidelines:
