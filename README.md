@@ -118,6 +118,8 @@ Explore the various sections of the website and engage with the content. You can
 
 ## ScreenShots
 
+![TechTales](https://github.com/user-attachments/assets/17dbf7e5-f72c-447b-b34e-d35cd2ed307f)
+
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to TechTales, please follow these guidelines:
