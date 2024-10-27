@@ -18,7 +18,7 @@ Welcome to **TechTales**, a blogging website dedicated to sharing insightful art
 
 - [Usage](#usage)
 
--[ScreenShots](#screenshots)
+- [ScreenShots](#screenshots)
 
 - [Contributing](#contributing)
 
