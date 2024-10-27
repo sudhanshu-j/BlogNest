@@ -70,4 +70,23 @@ window.onload = function() {
         document.body.classList.add(savedTheme);
     }
 };
+```
 
+## Responsive Design
+
+TechTales employs a mobile-first approach to ensure that all components are easily viewable on devices of any size. The combination of Flexbox and Grid allows for dynamic and adaptable layouts.
+
+## Getting Started
+
+To run TechTales on your local machine, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/TechTales.git
+   cd TechTales
+
+2. **Open the Website: Open the index.html file in your preferred web browser:**
+   ```bash
+   open index.html
+   ```
+   
