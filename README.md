@@ -20,7 +20,7 @@ Welcome to **TechTales**, a blogging website dedicated to sharing insightful art
 
 - [ScreenShots](#screenshots)
 
-- [File Structure](#filestructure)
+- [FileStructure](#file-structure)
 
 - [Contributing](#contributing)
 
@@ -125,22 +125,22 @@ Explore the various sections of the website and engage with the content. You can
 ## File Structure
 
 - **TechTales/**
-
-- ├── README.md                 # Project documentation
-- ├── index.html                # Main HTML file
-- ├── css/                      # Directory for CSS files
-- │   ├── styles.css            # Main stylesheet
-- │   └── responsive.css        # Responsive styles
-- │   └── toggle.css            # Dark/Light Theme Toggle styles
-- ├── js/                       # Directory for JavaScript files
-- │   ├── main.js               # Main JavaScript file
-- │   └── toggle.js             # Dark/Light Theme Toggle File
-- │   └── back-to-top.js        # Scroll up button functionality
-- ├── img/                      # Directory for images
-- │   ├── logo.png              # Project logo
-- │   ├── h-post-1.jpg         # Example post image
-- │   └── g-post-1.jpg         # Another example post image
-
+      ```bash
+      - ├── README.md                 # Project documentation
+      - ├── index.html                # Main HTML file
+      - ├── css/                      # Directory for CSS files
+      - │   ├── styles.css            # Main stylesheet
+      - │   └── responsive.css        # Responsive styles
+      - │   └── toggle.css            # Dark/Light Theme Toggle styles
+      - ├── js/                       # Directory for JavaScript files
+      - │   ├── main.js               # Main JavaScript file
+      - │   └── toggle.js             # Dark/Light Theme Toggle File
+      - │   └── back-to-top.js        # Scroll up button functionality
+      - ├── img/                      # Directory for images
+      - │   ├── logo.png              # Project logo
+      - │   ├── h-post-1.jpg         # Example post image
+      - │   └── g-post-1.jpg         # Another example post image
+      ```
 
 
 ## Contributing
