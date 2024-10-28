@@ -1,0 +1,1525 @@
+/* Importing the Roboto font from Google Fonts with various weights and styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Body styles */
+body {
+  background-color: #f5f6f7; /* Light gray background color */
+  width: 100%; /* Full width */
+  height: auto; /* Automatic height */
+  font-family: "Roboto", sans-serif; /* Setting the font to Roboto */
+  transition: all 0.4s; /* Smooth transition for changes */
+}
+
+/* CSS variables for main color and box shadow */
+:root {
+  --main-color: #aaa953; /* Main color variable */
+  --main-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Box shadow variable */
+}
+
+/* Anchor tag styles */
+a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* List item styles */
+li {
+  list-style: none; /* Remove default list styling */
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px; /* Maximum width of the container */
+  margin: auto; /* Center the container */
+}
+
+/* Flexbox utility class */
+.flex {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically in the center */
+}
+
+/* Header styles */
+header {
+  width: 100%; /* Full width for header */
+  height: auto; /* Automatic height */
+}
+
+/* Navigation styles */
+nav {
+  position: relative; /* Relative positioning for nav */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+/* Top navigation bar styles */
+.top-nav {
+  width: 100%; /* Full width */
+  height: 30px; /* Fixed height */
+  background-color: #161616; /* Dark background color */
+}
+
+/* Navigation one styles */
+.nav-one {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  align-items: center; /* Center items vertically */
+  color: #fff; /* White text color */
+  justify-content: space-between; /* Space items evenly */
+}
+
+/* Navigation list styles */
+.nav-one ul {
+  gap: 15px; /* Space between list items */
+}
+
+/* Navigation list item styles */
+.nav-one ul li {
+  font-size: 18px; /* Font size for list items */
+  font-weight: 500; /* Medium font weight */
+  /* transition: 0.3s; Uncomment for hover transition */
+}
+
+/* Hover effect for navigation list items */
+.nav-one ul li:hover {
+  color: var(--main-color); /* Change color on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Social link styles */
+.social-link {
+  gap: 18px; /* Space between social icons */
+  font-size: 18px; /* Font size for social icons */
+}
+
+/* Hover effect for social icons */
+.social-link i:hover {
+  color: var(--main-color); /* Change color on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Navbar styles */
+.main-nav {
+  position: relative; /* Sets the positioning context for child elements */
+  width: 100%; /* Full width of the navigation bar */
+  height: 60px; /* Fixed height for the navigation bar */
+  background-color: #fff; /* White background color */
+  box-shadow: 0 0 8px #bdbdbda1; /* Subtle shadow for depth effect */
+}
+
+.nav-two {
+  position: relative; /* Positioning relative for flex alignment */
+  justify-content: space-between; /* Space items evenly in the navigation */
+  width: 100%; /* Full width of the navigation container */
+  height: 100%; /* Full height of the navigation container */
+  align-items: center; /* Center items vertically within the navigation */
+}
+
+.logo {
+  gap: 25px; /* Space between logo elements */
+}
+
+.logo img {
+  width: 50px; /* Fixed width for the logo image */
+}
+
+.logo a h1 {
+  font-size: 30px; /* Font size for the logo text */
+  font-weight: 800; /* Bold font weight for emphasis */
+  font-style: fantasy; /* Fantasy font style for a unique look */
+  letter-spacing: 3px; /* Space between letters for readability */
+  color: #20338a; /* Dark blue color for the logo text */
+}
+
+.nav-list ul {
+  gap: 20px; /* Space between navigation items */
+}
+
+.nav-list ul li {
+  font-size: 16px; /* Font size for navigation list items */
+  font-weight: 700; /* Semi-bold font weight for prominence */
+  transition: 0.3s; /* Smooth transition for hover effects */
+  color: #555; /* Dark gray color for text */
+  letter-spacing: 0; /* No additional letter spacing */
+}
+
+.nav-list ul li a i {
+  font-size: 14px; /* Font size for icons within navigation items */
+  color: #555; /* Dark gray color for icons */
+  transition: 0.3s; /* Smooth transition for icon color change */
+  margin-left: 3.2px; /* Space to the left of the icon */
+}
+
+/* Hover effect for navigation list items and their icons */
+.nav-list ul li:hover,
+.nav-list ul li:hover a i {
+  color: var(--main-color); /* Change color to main color variable on hover */
+}
+
+.search-sec {
+  gap: 20px; /* Space between search section elements */
+}
+
+/* Styles for the dark mode toggle switch */
+.dark-toggle input[type="checkbox"] {
+  background-image: -webkit-linear-gradient(
+      hsla(0, 0%, 0%, 0.1),
+      hsla(0, 0%, 100%, 0.1)
+    ),
+    -webkit-linear-gradient(left, var(--main-color) 50%, #6cf 50%); /* Gradient backgrounds for toggle switch */
+  background-size: 100% 100%, 200% 100%; /* Size of background images */
+  background-position: 0 0, 15px 0; /* Position of background images */
+  border-radius: 25px; /* Rounded corners for the toggle switch */
+  box-shadow: inset 0 1px 4px hsla(0, 0%, 0%, 0.5),
+    /* Inner shadow for depth */ inset 0 0 10px hsla(0, 0%, 0%, 0.5),
+    /* Inner shadow for depth */ 0 0 0 1px hsla(0, 0%, 0%, 0.1),
+    /* Outer shadow for subtle effect */ 0 -1px 2px 2px hsla(0, 0%, 0%, 0.25),
+    /* Shadow effect for depth */ 0 2px 2px 2px hsla(0, 0%, 0%, 0.75); /* Shadow effect for depth */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  height: 12px; /* Fixed height for checkbox */
+  padding-right: 25px; /* Space on the right side */
+  width: 55px; /* Fixed width for checkbox */
+  -webkit-appearance: none; /* Remove default appearance for WebKit browsers */
+  appearance: none; /* Remove default appearance for other browsers */
+  -webkit-transition: 0.3s; /* Smooth transition for WebKit browsers */
+  transition: 0.3s; /* Smooth transition for other browsers */
+}
+.dark-toggle input[type="checkbox"]::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Positioning relative to the checkbox */
+  background-color: #fff; /* White background for the toggle switch */
+  width: 30px; /* Width of the toggle switch indicator */
+  height: 12.5px; /* Height of the toggle switch indicator */
+  display: block; /* Display as a block element */
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0.1),
+    hsla(0, 0%, 0%, 0.1)
+  ); /* Gradient background for a subtle effect */
+  border-radius: 25px; /* Rounded corners for the toggle switch indicator */
+}
+
+/* Styles for the dark mode toggle switch when checked */
+.dark-toggle input[type="checkbox"]:checked {
+  background-position: 0 0, 35px 0; /* Change background position when checked */
+  padding-left: 25px; /* Add padding to the left when checked */
+  padding-right: 0; /* Remove right padding when checked */
+}
+
+/* Margin for the toggle switch */
+.toggle {
+  margin-top: 5px; /* Space above the toggle switch */
+}
+
+/* Styles for the search icon */
+.search-bar i {
+  font-size: 16px; /* Font size for search icon */
+  font-weight: 800; /* Bold font weight for emphasis */
+  padding: 10px; /* Padding around the icon */
+  background-color: #f0e9e98e; /* Light background color for the icon */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for the search icon */
+.search-bar i:hover {
+  color: var(--main-color); /* Change color on hover to main color */
+}
+
+/* Styles for the search input field */
+#search-input {
+  position: absolute; /* Positioning absolute to overlay on search bar */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width of the parent container */
+  height: 100%; /* Full height of the parent container */
+  padding: 10px; /* Padding inside the input */
+  font-size: 15px; /* Font size for the input text */
+  outline: none; /* Remove outline on focus */
+  border: none; /* Remove border */
+  transition: 0.5s ease; /* Smooth transition for changes */
+  display: none; /* Initially hidden */
+}
+
+/* Styles for the close icon in the search bar */
+#close-icon {
+  position: absolute; /* Positioning absolute to overlay on search input */
+  top: 15px; /* Position from the top */
+  right: 0; /* Align to the right */
+  z-index: 9; /* Ensure it appears above other elements */
+}
+
+/* Main container styles */
+.main {
+  width: 100%; /* Full width of the main container */
+  height: auto; /* Height adjusts automatically based on content */
+}
+
+/* Trending section styles */
+.trending-sec {
+  width: 100%; /* Full width for the trending section */
+  height: 50px; /* Fixed height for the section */
+  background-color: #fff; /* White background color */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
+  margin: 30px 0; /* Vertical margin for spacing */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px 10px 30px; /* Padding for inner spacing */
+}
+
+/* Trending title styles */
+.trending-title {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  position: relative; /* Positioning context for pseudo-elements */
+  height: 20px; /* Fixed height for the title */
+  color: var(--main-color); /* Color from CSS variable */
+  padding: 0px 6px 0px 12px; /* Padding for inner spacing */
+}
+
+/* Pulse animation effect for the title */
+.trending-title::before {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Positioning absolute for animation */
+  left: 0; /* Align to the left */
+  width: 5px; /* Width of the pulse indicator */
+  height: 5px; /* Height of the pulse indicator */
+  background-color: var(--main-color); /* Color from CSS variable */
+  border-radius: 50%; /* Rounded shape */
+  animation: pulse 2s infinite; /* Pulse animation effect */
+}
+
+/* Static indicator for the title */
+.trending-title::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Positioning absolute */
+  left: 0; /* Align to the left */
+  width: 5px; /* Width of the indicator */
+  height: 5px; /* Height of the indicator */
+  background-color: var(--main-color); /* Color from CSS variable */
+  border-radius: 50%; /* Rounded shape */
+}
+
+/* Keyframes for the pulse animation */
+@keyframes pulse {
+  from {
+    opacity: 0.8; /* Start with some opacity */
+    transform: scale(0.8); /* Start slightly smaller */
+  }
+  to {
+    opacity: 0; /* Fade out */
+    transform: scale(4); /* Scale up for the pulse effect */
+  }
+}
+
+/* Title text styles */
+.trending-title h3 {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  font-size: 15px; /* Font size for the title */
+  font-weight: 700; /* Bold font weight */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Text change styles */
+.text-change {
+  font-size: 18px; /* Font size for the changing text */
+  margin-left: 8px; /* Space to the left of the text */
+  font-weight: 500; /* Medium font weight */
+  color: #555; /* Dark gray color for the text */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: 0.5s ease; /* Smooth transition for hover effects */
+}
+/* Hover effect for text change */
+.text-change:hover {
+  color: var(--main-color); /* Change text color to main color on hover */
+}
+
+/* Styles for icons in trending title */
+.trending-title h3 i {
+  margin-left: 5px; /* Space to the left of the icon */
+  font-size: 10px; /* Font size for the icon */
+}
+
+/* Styles for left-right change buttons */
+.left-right-change button {
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline on focus */
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Styles for icons within left-right change buttons */
+.left-right-change button i {
+  padding: 8px; /* Padding around the icon */
+  background-color: #eee; /* Light gray background for the icon */
+  font-size: 13px; /* Font size for the icon */
+  border-radius: 2px; /* Slightly rounded corners for the icon */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  color: #000; /* Black color for the icon */
+}
+
+/* Hover effect for icons in left-right change buttons */
+.left-right-change button i:hover {
+  background-color: var(
+    --main-color
+  ); /* Change background color to main color on hover */
+  color: #fff; /* Change icon color to white on hover */
+}
+
+/* Post section styles */
+.header-post-sec {
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the post section */
+  height: 400px; /* Fixed height for the post section */
+  background-color: #fff; /* White background color */
+  padding: 20px; /* Padding inside the section */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+}
+
+/* Styles for posts grid */
+.h-posts {
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the posts container */
+  height: 100%; /* Full height of the posts container */
+  display: grid; /* Use grid layout for posts */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-gap: 20px; /* Space between grid items */
+}
+
+/* Styles for individual big posts */
+.big-post {
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the big post */
+  height: 100%; /* Full height of the big post */
+  overflow: hidden; /* Hide overflow content */
+  transition: 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Styles for images in big posts */
+.big-post img {
+  width: 100%; /* Full width of the image */
+  height: 100%; /* Full height of the image */
+  object-fit: cover; /* Cover the area without distortion */
+  background-size: cover; /* Ensure background covers the area */
+  overflow: hidden; /* Hide overflow content */
+  transition: 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Overlay effect for big posts */
+.big-post::before {
+  content: ""; /* Empty content for the pseudo-element */
+  display: block; /* Display as a block element */
+  position: absolute; /* Positioning absolute for overlay */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width of the overlay */
+  height: 100%; /* Full height of the overlay */
+  background-image: linear-gradient(
+    /* Gradient overlay */ to bottom,
+    rgba(0, 0, 0, 0) 25%,
+    /* Transparent at the top */ rgba(0, 0, 0, 0.95)
+      /* Dark overlay at the bottom */
+  );
+  backface-visibility: hidden; /* Prevent backface visibility */
+  z-index: 2; /* Ensure it appears above other elements */
+  opacity: 1; /* Fully visible */
+  margin: 0; /* No margin */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+}
+
+/* Hover effect for big posts */
+.big-post:hover img {
+  transform: scale(1.05); /* Scale image slightly on hover for a zoom effect */
+}
+
+/* Positioning for post information */
+.post-info {
+  position: absolute; /* Positioning absolute for overlay effect */
+  bottom: 0; /* Align to the bottom of the post */
+  left: 0; /* Align to the left */
+  padding: 20px; /* Padding inside the info section */
+  z-index: 2; /* Ensure it appears above other elements */
+}
+
+/* Styles for label in post info */
+.label {
+  font-size: 10px; /* Font size for the label */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  background-color: var(--main-color); /* Background color from variable */
+  padding: 3px 8px; /* Padding around the label */
+  height: 17px; /* Fixed height for the label */
+  color: #fff; /* White text color */
+  border-radius: 3px; /* Rounded corners for the label */
+}
+
+/* Styles for post title */
+.post-info h2 {
+  font-size: 15px; /* Font size for the post title */
+  max-width: 320px; /* Maximum width for the title */
+  color: #fff; /* White text color */
+  margin: 12px 0; /* Margin above and below the title */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+/* Styles for post description */
+.post-info p {
+  color: #888; /* Gray color for the description text */
+}
+
+/* Styles for spans within post description */
+.post-info p span {
+  color: #aaa; /* Lighter gray color for span text */
+}
+
+/* Grid layout for posts */
+.grid-post {
+  position: relative; /* Positioning context for child elements */
+  display: grid; /* Use grid layout for posts */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-gap: 2px; /* Space between grid items */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for individual grid posts */
+.g-post {
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the grid post */
+  height: 100%; /* Full height of the grid post */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Overlay effect for grid posts */
+.g-post::before {
+  content: ""; /* Empty content for the pseudo-element */
+  display: block; /* Display as a block element */
+  position: absolute; /* Positioning absolute for overlay */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width of the overlay */
+  height: 100%; /* Full height of the overlay */
+  background-image: linear-gradient(
+    /* Gradient overlay */ to bottom,
+    rgba(0, 0, 0, 0) 25%,
+    /* Transparent at the top */ rgba(0, 0, 0, 0.85)
+      /* Dark overlay at the bottom */
+  );
+  backface-visibility: hidden; /* Prevent backface visibility */
+  z-index: 2; /* Ensure it appears above other elements */
+  opacity: 1; /* Fully visible */
+  margin: 0; /* No margin */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+}
+
+/* Style for the first grid post to span two columns */
+.g-post:nth-child(1) {
+  grid-column: 1/3; /* Span across the first two columns */
+}
+
+/* Styles for images in grid posts */
+.g-post img {
+  width: 100%; /* Full width of the image */
+  height: 100%; /* Full height of the image */
+  object-fit: cover; /* Cover the area without distortion */
+  background-size: cover; /* Ensure background covers the area */
+  overflow: hidden; /* Hide overflow content */
+  transition: 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for images in grid posts */
+.g-post:hover img {
+  transform: scale(1.05); /* Scale image slightly on hover for a zoom effect */
+}
+
+/* Styles for post titles in grid posts */
+.g-post h2 {
+  font-size: 15px; /* Font size for the post title */
+}
+
+/* Left post container styles */
+.all-main-post {
+  margin: 30px 0; /* Vertical margin for spacing */
+  justify-content: space-between; /* Space between child elements */
+  align-items: flex-start; /* Align items to the start */
+}
+
+/* Left section styles */
+.left-sec {
+  position: relative; /* Positioning context for child elements */
+  width: calc(
+    100% - 345px
+  ); /* Width calculation to leave space for other elements */
+  height: 100%; /* Full height of the parent container */
+}
+
+/* Styles for various news sections */
+.health-news,
+.review-sec,
+.latest-post-sec {
+  width: 100%; /* Full width of the section */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  padding: 20px; /* Padding inside the section */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  overflow: hidden; /* Hide overflow content */
+  margin-bottom: 30px; /* Space below each section */
+}
+
+/* Title section styles */
+.title {
+  position: relative; /* Positioning context for child elements */
+  align-items: center; /* Center align items */
+  justify-content: space-between; /* Space between title and other elements */
+  height: 30px; /* Fixed height for the title */
+  border-bottom: 2px solid rgba(155, 155, 155, 0.1); /* Bottom border for separation */
+}
+
+/* Title text styles */
+.title h3 {
+  position: relative; /* Positioning context for pseudo-element */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  font-size: 15px; /* Font size for the title */
+  font-weight: 700; /* Bold font weight */
+  height: 30px; /* Fixed height for the title */
+  list-style: 1; /* List style for the title */
+  margin: 0; /* Remove default margin */
+}
+
+/* Underline effect for title */
+.title h3::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Positioning absolute for underline */
+  bottom: 0; /* Align to the bottom of the title */
+  left: 0; /* Align to the left */
+  width: 40px; /* Width of the underline */
+  height: 2px; /* Height of the underline */
+  background-color: var(--main-color); /* Color from variable */
+  margin: 0; /* No margin */
+}
+
+/* Link styles in the title */
+.title a {
+  font-size: 13px; /* Font size for the link */
+  height: 30px; /* Fixed height for the link */
+  color: #999; /* Gray color for the link */
+  list-style: 1; /* List style for the link */
+}
+
+/* Hover effect for title links */
+.title a:hover {
+  color: var(--main-color); /* Change color to main color on hover */
+}
+
+/* Styles for posts container */
+.posts {
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the posts container */
+  height: 368px; /* Fixed height for the posts container */
+  overflow: hidden; /* Hide overflow content */
+  margin: 18px 0; /* Vertical margin for spacing */
+  margin-bottom: 0; /* No bottom margin */
+  align-items: flex-start; /* Align items to the start */
+  gap: 30px; /* Space between posts */
+}
+
+/* Individual post styles */
+.post {
+  position: relative; /* Positioning context for child elements */
+  display: block; /* Display as a block element */
+  width: calc(100% - 25%); /* Width calculation for posts */
+  height: 100%; /* Full height of the post */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for images in posts */
+.post img {
+  width: 100%; /* Full width of the image */
+  height: 100%; /* Full height of the image */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Styles for post information container */
+.more-post {
+  flex-direction: column; /* Stack children vertically */
+  height: 100%; /* Full height of the parent container */
+  justify-content: space-between; /* Space between child elements */
+  align-items: flex-start; /* Align items to the start */
+}
+
+/* Styles for new posts */
+.new-post {
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the new post */
+  height: 70px; /* Fixed height for the new post */
+}
+
+/* Remove background image for the new post */
+.new-post::before {
+  background-image: none; /* No background image */
+}
+
+/* Styles for images in new posts */
+.new-post img {
+  width: 70px; /* Fixed width for the image */
+  height: 100%; /* Full height of the new post */
+}
+
+/* Styles for new post information */
+.new-post-info {
+  position: relative; /* Positioning context for child elements */
+  text-align: left; /* Left-align text */
+}
+
+/* Hide span elements in new post info */
+.new-post-info span {
+  display: none; /* Do not display span elements */
+}
+
+/* Styles for the title in new post info */
+.new-post-info h2 {
+  font-size: 15px; /* Font size for the title */
+  color: #333; /* Dark gray color for the title */
+  margin-top: -15px; /* Negative margin to adjust position */
+}
+
+/* Styles for the description in new post info */
+.new-post-info p {
+  font-size: 13px; /* Font size for the description */
+  color: #999; /* Light gray color for the description */
+}
+
+/* Hover effect for new post title */
+.new-post:hover .new-post-info h2 {
+  color: var(--main-color); /* Change title color to main color on hover */
+}
+
+/* Styles for review posts container */
+.review-posts {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between child elements */
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+}
+
+/* Styles for individual review posts */
+.rev-post {
+  width: 220px; /* Fixed width for review posts */
+  overflow: hidden; /* Hide overflow content */
+  margin: 20px 0; /* Vertical margin for spacing */
+}
+
+/* Styles for review post images */
+.rev-post-img {
+  position: relative; /* Positioning context for child elements */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for images in review posts */
+.rev-post-img img {
+  width: 100%; /* Full width of the image */
+  height: 140px; /* Fixed height for the image */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Styles for labels in review post images */
+.rev-post-img .label {
+  position: absolute; /* Positioning absolute for label */
+  bottom: 0; /* Align to the bottom of the image */
+  left: 0; /* Align to the left */
+  font-size: 11px; /* Font size for the label */
+  height: auto; /* Automatic height based on content */
+}
+
+/* Hide the pseudo-element for review posts */
+.rev-post::before {
+  display: none; /* Do not display the pseudo-element */
+}
+
+/* Styles for review post information */
+.rev-post-info {
+  position: relative; /* Positioning context for child elements */
+  color: #000; /* Black color for text */
+  padding: 0; /* No padding */
+}
+
+/* Hover effect for review post title */
+.rev-post:hover .rev-post-info h2 {
+  color: var(--main-color); /* Change title color to main color on hover */
+}
+
+/* Default color for review post title */
+.rev-post-info h2 {
+  color: #333; /* Dark gray color for the title */
+}
+
+/* Color for review post description */
+.rev-post-info p {
+  color: #999; /* Light gray color for the description */
+}
+
+/* Gadget section alignment */
+.gadget-sec {
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between child elements */
+}
+
+/* Styles for gadgets and laptops sections */
+.gadgets,
+.laptops {
+  width: 48%; /* Width of each section */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  padding: 20px; /* Padding inside the section */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 30px; /* Space below each section */
+}
+
+/* Styles for gadget and laptop posts */
+.gadget-posts,
+.laptop-posts {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  flex-direction: column; /* Stack items vertically */
+  margin-top: 20px; /* Margin above the posts */
+  gap: 22px; /* Space between posts */
+}
+
+/* Remove margin for links in gadget and laptop posts */
+.gadget-posts a,
+.laptop-posts a {
+  margin: 0; /* No margin for links */
+}
+
+/* Styles for post container */
+.p-post {
+  overflow: visible; /* Allow overflow content to be visible */
+}
+
+/* Styles for gadget and laptop post titles */
+.gadget-post-info h2,
+.laptop-post-info h2 {
+  font-size: 14px; /* Font size for the title */
+  margin-top: 10px; /* Margin above the title */
+}
+
+/* Styles for latest posts section */
+.latest-posts {
+  margin-top: 20px; /* Margin above the latest posts section */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between latest posts */
+}
+
+/* Styles for latest data container */
+.latest-data {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between items */
+}
+
+/* Hover effect for latest post title */
+.latest-data a:hover .post-info h2 {
+  color: var(--main-color); /* Change title color to main color on hover */
+}
+
+/* Styles for individual latest posts */
+.latest-post {
+  width: 100%; /* Full width of the latest post */
+  align-items: flex-start; /* Align items to the start */
+}
+
+/* Hide the pseudo-element for latest posts */
+.latest-post::before {
+  display: none; /* Do not display the pseudo-element */
+}
+
+/* Styles for latest post images */
+.latest-post .latest-post-img {
+  position: relative; /* Positioning context for child elements */
+  width: 70%; /* Width of the latest post image */
+  height: 170px; /* Fixed height for the image */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for latest post image */
+.latest-post .latest-post-img img {
+  width: 100%; /* Full width of the image */
+  height: 100%; /* Full height of the image */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Label styles for latest post images */
+.latest-post-img .label {
+  position: absolute; /* Positioning context for the label */
+  bottom: 0; /* Align to the bottom of the image */
+  left: 0; /* Align to the left */
+  height: auto; /* Automatic height based on content */
+  font-size: 11px; /* Font size for the label */
+}
+
+/* Styles for latest post information */
+.latest-post-info {
+  padding: 5px 20px; /* Padding around the post info */
+}
+
+/* Title styles for latest post information */
+.latest-post-info h2 {
+  font-size: 23px; /* Font size for the title */
+  margin-top: 0; /* Remove top margin */
+}
+
+/* Subtitle styles for latest post information */
+.latest-post-info h5 {
+  color: #555; /* Gray color for the subtitle */
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 15px; /* Margin below the subtitle */
+}
+
+/* Load more button styles */
+.load-more {
+  width: 100%; /* Full width of the button */
+  font-size: 13px; /* Font size for the button text */
+  font-weight: 600; /* Bold font weight */
+  background-color: #fff; /* White background color */
+  border: 1px solid #827b7b8c; /* Light gray border */
+  padding: 5px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Icon styles inside the load more button */
+.load-more i {
+  margin-left: 5px; /* Space between text and icon */
+  font-size: 11px; /* Font size for the icon */
+}
+
+/* Hover effect for load more button */
+.load-more:hover {
+  background-color: var(--main-color); /* Change background color on hover */
+  color: #fff; /* Change text color to white on hover */
+}
+
+/* Right post section styles */
+.right-sec {
+  position: sticky; /* Sticky positioning to keep it in view */
+  top: 0; /* Stick to the top of the viewport */
+  width: 320px; /* Fixed width for the right section */
+  height: 100%; /* Full height of the parent container */
+}
+
+/* Styles for social section */
+.social {
+  width: 100%; /* Full width of the social section */
+  height: 170px; /* Fixed height for the social section */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the social section */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for social links container */
+.social-links {
+  flex-wrap: wrap; /* Allow wrapping of social buttons */
+  justify-content: space-between; /* Space between social buttons */
+  margin-top: 10px; /* Margin above the social links */
+}
+
+/* Styles for individual social buttons */
+.social-btn {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  gap: 5px; /* Space between icon and text */
+  width: 130px; /* Fixed width for social buttons */
+  height: 40px; /* Fixed height for social buttons */
+  padding: 10px 0; /* Padding inside the buttons */
+  border-radius: 5px; /* Rounded corners */
+  color: #fff; /* White text color */
+  font-size: 16px; /* Font size for button text */
+  font-weight: 600; /* Bold font weight */
+  margin: 5px 0; /* Vertical margin for spacing */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for social button icons */
+.social-btn i {
+  font-size: 20px; /* Font size for the icon */
+  color: #fff; /* White color for the icon */
+  padding: 12px; /* Padding around the icon */
+  background-color: #ffffff2c; /* Semi-transparent background for the icon */
+}
+
+/* Gradient background for the third social button */
+.social-links a:nth-child(3) .social-btn {
+  background: linear-gradient(
+    to right,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  ); /* Gradient effect */
+}
+
+/* Background color for the first social button */
+.social-links a:nth-child(1) .social-btn {
+  background: #5665d4; /* Blue background color */
+}
+
+/* Background color for the second social button */
+.social-links a:nth-child(2) .social-btn {
+  background: #66757f; /* Grayish background color */
+}
+
+/* Background color for the fourth social button */
+.social-links a:nth-child(4) .social-btn {
+  background: #cd201f; /* Red background color */
+}
+
+/* Styles for the popular section */
+.popular-sec {
+  width: 100%; /* Full width of the section */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the section */
+  border-radius: 5px; /* Rounded corners */
+  margin: 30px 0; /* Vertical margin for spacing */
+}
+
+/* Styles for popular posts */
+.popu-post {
+  display: block; /* Block display for the post */
+  width: 100%; /* Full width of the post */
+  height: 185px; /* Fixed height for the post */
+  margin: 15px 0; /* Vertical margin for spacing */
+}
+
+/* Styles for images in popular posts */
+.popu-post img {
+  width: 100%; /* Full width of the image */
+  height: 100%; /* Full height of the image */
+  object-fit: cover; /* Cover the area without distortion */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for popular posts container */
+.popular-posts {
+  flex-direction: column; /* Stack items vertically */
+  gap: 30px; /* Space between popular posts */
+}
+
+/* Styles for individual popular posts */
+.popular-post {
+  overflow: visible; /* Allow overflow content to be visible */
+}
+
+/* Styles for images in popular posts */
+.popular-post img {
+  width: 100%; /* Full width of the image */
+  height: auto; /* Automatic height based on aspect ratio */
+}
+
+/* Title styles for popular post information */
+.popular-post-info h2 {
+  font-size: 14px; /* Font size for the title */
+  margin-top: 10px; /* Margin above the title */
+}
+
+/* Styles for the travel section */
+.travel-sec {
+  width: 100%; /* Full width of the section */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the section */
+  border-radius: 5px; /* Rounded corners */
+  margin: 30px 0; /* Vertical margin for spacing */
+}
+
+/* Styles for travel posts container */
+.travel-posts {
+  align-self: center; /* Center align the container */
+  justify-content: space-between; /* Space between travel posts */
+  flex-wrap: wrap; /* Allow wrapping of travel posts */
+}
+
+/* Styles for individual travel posts */
+.travel-post {
+  display: block; /* Block display for the post */
+  width: 128px; /* Fixed width for the travel post */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styles for images in travel posts */
+.travel-post img {
+  height: 90px; /* Fixed height for the travel post image */
+}
+
+/* Styles for label in travel posts */
+.travel-post h2 {
+  font-size: 13px; /* Font size for the travel post title */
+}
+
+.travel-post .label {
+  font-size: 10px; /* Font size for the label in travel posts */
+}
+
+.travel-post p {
+  color: #999; /* Light gray color for the travel post description */
+}
+
+/* Styles for the newsletter section */
+.newsletter-sec {
+  position: relative; /* Relative positioning for child elements */
+  width: 100%; /* Full width of the section */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the section */
+  margin: 30px 0; /* Vertical margin for spacing */
+  border-top: 3px solid #000; /* Black top border for emphasis */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Pseudo-element for the newsletter section */
+.newsletter-sec::before {
+  content: ""; /* Empty content for potential styling */
+}
+
+/* Title styles for the newsletter section */
+.newsletter-sec h2 {
+  font-size: 18px; /* Font size for the newsletter title */
+}
+
+/* Paragraph styles for the newsletter section */
+.newsletter-sec p {
+  font-size: 15px; /* Font size for the newsletter description */
+  color: #999; /* Light gray color for the description */
+  margin: 15px 0; /* Vertical margin for spacing */
+}
+
+/* Styles for the newsletter form container */
+.newsletter-sec .newsletter-form {
+  width: 100%; /* Full width of the form */
+  height: 100%; /* Full height of the form */
+}
+
+/* Styles for input fields in the newsletter form */
+.newsletter-sec .newsletter-form input {
+  width: 100%; /* Full width of the input field */
+  padding: 10px; /* Padding inside the input field */
+  margin-bottom: 10px; /* Margin below the input field */
+  border: none; /* No border */
+  outline-width: 1px; /* Outline width for focus */
+  outline-color: #ccc; /* Light gray outline color */
+}
+
+/* Styles for the submit button in the newsletter form */
+.newsletter-sec .newsletter-form button {
+  width: 100%; /* Full width of the button */
+  padding: 8px; /* Padding inside the button */
+  border: none; /* No border */
+  background-color: var(--main-color); /* Background color from variable */
+  color: #fff; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  opacity: 0.8; /* Slightly transparent button */
+  transition: 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the submit button */
+.newsletter-sec .newsletter-form button:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Styles for the comment box */
+.comment-box {
+  position: relative; /* Relative positioning for child elements */
+  width: 100%; /* Full width of the comment box */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the comment box */
+  margin: 30px 0; /* Vertical margin for spacing */
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the comment section */
+.comment-sec {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 30px; /* Space between comments */
+  margin-top: 20px; /* Margin above the comment section */
+}
+
+/* Styles for individual comments */
+.comment {
+  align-items: center; /* Center align items within the comment */
+  gap: 10px; /* Space between elements in the comment */
+  transition: 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* User image styles */
+.user-img {
+  width: 90px; /* Fixed width for user image container */
+  height: auto; /* Automatic height based on content */
+}
+
+/* Styles for user images */
+.user-img img {
+  width: 100%; /* Full width of the image */
+  height: 100%; /* Full height of the image */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Styles for comment information title */
+.comment-info h4 {
+  font-size: 18px; /* Font size for the commenter's name */
+  margin-bottom: 10px; /* Margin below the name */
+  color: #16116a; /* Dark blue color for the name */
+  transition: 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Styles for comment text */
+.comment-info p {
+  font-size: 12px; /* Font size for the comment text */
+  color: #999; /* Light gray color for the comment text */
+}
+
+/* Styles for additional comment info (e.g., date) */
+.comment-info span {
+  font-size: 10px; /* Smaller font size for additional info */
+  color: #1e1b1b; /* Dark color for additional info */
+}
+
+/* Hover effect for commenter's name */
+.comment:hover h4 {
+  color: var(--main-color); /* Change color on hover */
+}
+
+/* Styles for the category box */
+.category-box {
+  position: relative; /* Relative positioning for child elements */
+  width: 100%; /* Full width of the category box */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the category box */
+  margin: 30px 0; /* Vertical margin for spacing */
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the categories container */
+.categories {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack categories vertically */
+  gap: 20px; /* Space between categories */
+  margin-top: 20px; /* Margin above the categories */
+}
+
+/* Styles for individual categories */
+.category {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between items */
+  gap: 10px; /* Space between elements in the category */
+}
+
+/* Styles for category titles */
+.category h3 {
+  font-size: 16px; /* Font size for category title */
+  font-weight: 500; /* Medium font weight */
+  color: #555; /* Gray color for the title */
+}
+
+/* Styles for icons in category titles */
+.category h3 i {
+  font-size: 16px; /* Font size for the icon */
+  color: #999; /* Light gray color for the icon */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Styles for category descriptions */
+.category p {
+  font-size: 12px; /* Font size for category description */
+  color: #999; /* Light gray color for the description */
+}
+
+/* Hover effect for category titles */
+.category:hover h3 {
+  color: var(--main-color); /* Change color on hover */
+}
+
+/* Styles for the tags box */
+.tags-box {
+  position: relative; /* Relative positioning for child elements */
+  width: 100%; /* Full width of the tags box */
+  height: auto; /* Automatic height based on content */
+  background-color: #fff; /* White background color */
+  box-shadow: var(--main-box-shadow); /* Shadow effect for depth */
+  padding: 20px; /* Padding inside the tags box */
+  margin: 30px 0; /* Vertical margin for spacing */
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the tags container */
+.tags-sec {
+  flex-wrap: wrap; /* Allow tags to wrap onto the next line */
+  gap: 10px; /* Space between tags */
+  margin-top: 20px; /* Margin above the tags section */
+}
+
+/* Styles for individual tags */
+.tag {
+  padding: 10px; /* Padding inside the tag */
+  background-color: #9897974a; /* Semi-transparent gray background */
+  border-radius: 5px; /* Rounded corners for the tag */
+  font-size: 14px; /* Font size for the tag text */
+}
+
+/* Hover effect for tags */
+.tag:hover {
+  background-color: #98979780; /* Darker background on hover */
+}
+
+/* Footer styles */
+footer {
+  width: 100%; /* Full width of the footer */
+  height: 65vh; /* Fixed height for the footer */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+}
+
+/* Footer section styles */
+.footer-sec {
+  padding: 40px 0; /* Vertical padding for the footer section */
+  width: 100%; /* Full width of the footer section */
+  height: 100%; /* Full height of the footer section */
+}
+
+/* Styles for the first footer layout */
+.first-footer {
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between; /* Space between footer items */
+}
+
+/* Styles for footer category box, posts box, and popular posts */
+.footer-categories-bx,
+.f-posts-box,
+.f-popu-post {
+  color: white; /* White text color for footer items */
+  overflow: hidden; /* Hide overflow content */
+  width: 30%; /* Fixed width for each footer item */
+}
+
+/* Styles for footer section titles */
+.footer-categories-bx h3,
+.f-posts-box h3,
+.f-popu-post h3 {
+  font-size: 16px; /* Font size for section titles */
+}
+
+/* Styles for footer categories container */
+.footer-categories {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack categories vertically */
+  gap: 15px; /* Space between categories */
+  margin-top: 20px; /* Margin above the categories */
+}
+
+/* Styles for links in footer categories */
+.footer-categories a {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between link text and additional info */
+  color: rgba(255, 255, 255, 0.734); /* Semi-transparent white color */
+}
+
+/* Styles for category link titles */
+.footer-categories a h4 {
+  font-size: 14px; /* Font size for category link title */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Styles for category link descriptions */
+.footer-categories a p {
+  font-size: 13px; /* Font size for category link description */
+}
+
+/* Styles for footer tags section */
+.footer-tags {
+  margin-top: 40px; /* Margin above the tags section */
+}
+
+/* Styles for latest posts in the footer */
+.f-latest-posts {
+  flex-direction: column; /* Stack latest posts vertically */
+  gap: 30px; /* Space between latest posts */
+  margin-top: 20px; /* Margin above the latest posts section */
+}
+
+/* Styles for latest posts section title */
+.f-latest-posts h2 {
+  color: #ffffff; /* White color for the title */
+  margin-top: 0; /* No margin above the title */
+}
+
+/* Styles for individual latest posts */
+.f-latest-posts .g-post {
+  align-items: flex-start; /* Align items to the start */
+}
+
+/* Styles for post information in the latest posts section */
+.f-latest-posts .post-info {
+  padding: 0 10px; /* Horizontal padding for post info */
+}
+
+/* Styles for the second footer */
+.second-footer {
+  margin-top: 70px; /* Margin above the second footer */
+  justify-content: space-between; /* Space between items in the footer */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+/* Styles for the logo in the second footer */
+.second-footer .logo img {
+  width: 45px; /* Fixed width for the logo image */
+}
+
+/* Styles for the logo text in the second footer */
+.second-footer .logo a h1 {
+  color: #ffffff; /* White color for the logo text */
+}
+
+/* Styles for social icons in the footer */
+.f-social-icons .social-link i {
+  font-size: 18px; /* Font size for social media icons */
+}
+
+/* Styles for social link buttons */
+.f-social-icons .social-link a {
+  padding: 10px; /* Padding inside social link buttons */
+  border-radius: 10px; /* Rounded corners for buttons */
+}
+
+/* Hover effect for social link icons */
+.f-social-icons .social-link a:hover i {
+  color: #fff; /* Change icon color on hover */
+}
+
+/* Hover effect for the first social link */
+.f-social-icons .social-link a:nth-child(1):hover {
+  background-color: #2c75ea; /* Blue background on hover */
+}
+
+/* Hover effect for the second social link */
+.f-social-icons .social-link a:nth-child(2):hover {
+  background-color: #747474; /* Gray background on hover */
+}
+
+/* Hover effect for the third social link */
+.f-social-icons .social-link a:nth-child(3):hover {
+  background-color: #fd1d1d; /* Red background on hover */
+}
+
+/* Hover effect for the fourth social link */
+.f-social-icons .social-link a:nth-child(4):hover {
+  background: linear-gradient(
+    to right,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  ); /* Gradient background on hover */
+}
+
+/* Styles for the third footer */
+.third-footer {
+  color: #000; /* Black text color for the third footer */
+  margin-top: 50px; /* Margin above the third footer */
+  justify-content: space-between; /* Space between items in the footer */
+}
+
+/* Styles for copyright section */
+.copyright h3 {
+  font-size: 16px; /* Font size for copyright text */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Styles for the list in the third footer */
+.third-footer ul {
+  gap: 20px; /* Space between list items */
+}
+
+/* Styles for links in the third footer list */
+.third-footer ul li a {
+  font-size: 15px; /* Font size for footer links */
+}
+
+/* Hover effect for footer links */
+.third-footer ul li a:hover {
+  color: var(--main-color); /* Change color on hover */
+}
+
+/* Styles for the scroll-up button */
+.scrollup {
+  position: fixed; /* Fixed position on the screen */
+  right: 1rem; /* Position from the right */
+  bottom: -30%; /* Position from the bottom */
+  background-color: rgba(
+    248,
+    129,
+    129,
+    0.573
+  ); /* Semi-transparent background color */
+  backdrop-filter: blur(16px); /* Blur effect for background */
+  -webkit-backdrop-filter: blur(16px); /* Safari support for blur effect */
+  display: inline-flex; /* Inline flex display for button */
+  padding: 0.75rem; /* Padding inside the button */
+  border-radius: 0.5rem; /* Rounded corners for the button */
+  font-size: 1.15rem; /* Font size for the button text */
+  color: var(--white-color); /* White color for the button text */
+  z-index: var(--z-tooltip); /* Z-index for stacking context */
+  transition: 0.6s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the scroll-up button */
+.scrollup:hover {
+  transform: translateY(-0.25rem); /* Slight upward movement on hover */
+}
+
+/* Styles for showing the scroll-up button */
+.show-scroll {
+  bottom: 3rem; /* Position the scroll-up button 3rem from the bottom */
+}
+
+/* Custom scrollbar styles for WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Styles for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: var(
+    --main-color
+  ); /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the scrollbar track */
+}
+
+/* Navigation styles when active */
+.nav-on {
+  display: none; /* Initially hide the navigation when active */
+}
+
+/* Navigation styles when inactive */
+.nav-off {
+  display: none; /* Initially hide the navigation when inactive */
+}

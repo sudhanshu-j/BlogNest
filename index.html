@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Main stylesheet for custom styles -->
+
+    <!-- Custom Toggle Style -->
+    <link rel="stylesheet" href="/CSS/toggle.css" />
+    <!-- Stylesheet specifically for toggle elements, e.g., dark mode -->
+
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="/CSS/responsive.css" />
+    <!-- Stylesheet for responsive design to ensure proper display on different devices -->
+
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- CDN link for Font Awesome icons -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/img/logo.png" />
+    <!-- Favicon for the website, displayed in the browser tab -->
+
+    <!-- Page Title -->
+    <title>TechTales</title>
+    <!-- Title of the webpage, shown in the browser tab and used for SEO -->
+  </head>
+  <body>
+    <!-- Body content goes here -->
+
+    <!-- Header section -->
+    <header>
+      <nav>
+        <!-- Top navigation bar -->
+        <div class="top-nav">
+          <div class="nav-one container flex">
+            <ul class="flex">
+              <li><a href="#">Home</a></li>
+              <!-- Link to Home -->
+              <li><a href="#">Privacy Policy</a></li>
+              <!-- Link to Privacy Policy -->
+              <li><a href="#">Terms & Conditions</a></li>
+              <!-- Link to Terms & Conditions -->
+              <li><a href="#contact">Contact Us</a></li>
+              <!-- Link to Contact Us section -->
+            </ul>
+
+            <!-- Social media links -->
+            <div class="social-link flex">
+              <a href="#" title="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <!-- Facebook icon -->
+              </a>
+              <a href="#" title="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+                <!-- Twitter icon -->
+              </a>
+              <a href="#" title="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+                <!-- YouTube icon -->
+              </a>
+              <a href="#" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <!-- Instagram icon -->
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main navigation bar -->
+        <div class="main-nav">
+          <div class="nav-two container flex">
+            <div class="logo flex nav-list">
+              <a href="#" class="flex">
+                <img src="/img/logo.png" alt="TechTales Logo" />
+                <!-- Logo image -->
+                <h1>TechTales</h1>
+                <!-- Site title -->
+              </a>
+
+              <!-- Main navigation links -->
+              <ul class="flex">
+                <li><a href="#">Home</a></li>
+                <!-- Link to Home -->
+                <li><a href="#latest">Latest Post</a></li>
+                <!-- Link to Latest Post section -->
+                <li><a href="#travel">Travel Blog</a></li>
+                <!-- Link to Travel Blog section -->
+                <li><a href="#review">Tech Review</a></li>
+                <!-- Link to Tech Review section -->
+                <li><a href="#footer">About Us</a></li>
+                <!-- Link to About Us section -->
+              </ul>
+            </div>
+
+            <!-- Search section -->
+            <div class="search-sec flex">
+              <div class="toggle">
+                <div class="dark-toggle">
+                  <input type="checkbox" name="checkbox" id="toggle-nav" />
+                  <!-- Dark mode toggle -->
+                </div>
+              </div>
+
+              <!-- Search bar with icons -->
+              <div class="search-bar">
+                <i
+                  class="fa-solid fa-xmark"
+                  id="close-icon"
+                  title="Close Search"
+                ></i>
+                <!-- Close search icon -->
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  id="search-icon"
+                  title="Search"
+                ></i>
+                <!-- Search icon -->
+              </div>
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <!-- Search input field -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="trending-sec flex">
+        <div class="flex">
+          <!-- Trending title section -->
+          <div class="trending-title">
+            <h3>
+              Trending Now
+              <!-- Title for the trending section -->
+              <i class="fa-solid fa-chevron-right"></i>
+              <!-- Icon indicating more content or a right arrow -->
+            </h3>
+          </div>
+          <!-- Text for the current trending item -->
+          <div class="text-change">
+            <a href="#">
+              The Vision Pro is a big leap for spatial computing in an
+              unfriendly package.
+            </a>
+          </div>
+        </div>
+        <!-- Buttons for navigating left and right through trending items -->
+        <div class="left-right-change">
+          <button>
+            <i class="fa-solid fa-chevron-left" id="left"></i>
+            <!-- Left navigation button icon -->
+          </button>
+          <button>
+            <i class="fa-solid fa-chevron-right" id="right"></i>
+            <!-- Right navigation button icon -->
+          </button>
+        </div>
+      </section>
+
+      <section class="header-post-sec">
+        <div class="h-posts">
+          <!-- Main featured post -->
+          <a
+            href="https://www.pclaptops.com/blog_post/blog/121.html"
+            class="big-post top-post"
+            id="first-post"
+          >
+            <img src="/img/h-post-1.jpg" alt="" />
+            <!-- Image for the main post -->
+            <div class="post-info header-post-info">
+              <span class="label">Laptop</span>
+              <!-- Category label for the post -->
+              <h2>Is a Laptop a Computer? Discussing the Basics</h2>
+              <!-- Title of the main post -->
+              <p>
+                by
+                <span>
+                  <a href="https://www.pclaptops.com/blog_post/blog/121.html"
+                    >John Doe</a
+                  >
+                  <!-- Author link -->
+                </span>
+                25 May 2024
+                <!-- Date of the post -->
+              </p>
+            </div>
+          </a>
+
+          <!-- Grid of additional posts -->
+          <div class="grid-post">
+            <!-- First additional post -->
+            <a href="#" class="g-post top-post">
+              <img src="img/g-post-1.png" alt="" class="img-1" />
+              <!-- Image for the first grid post -->
+              <div class="post-info">
+                <span class="label">Apple Watch</span>
+                <!-- Category label for the post -->
+                <h2>
+                  The Apple Watch Is the Best Smartwatch for iPhone Owners
+                </h2>
+                <!-- Title of the first grid post -->
+                <p>January 2, 2024</p>
+                <!-- Date of the first grid post -->
+              </div>
+            </a>
+
+            <!-- Second additional post -->
+            <a
+              href="https://www.thurrott.com/mobile/android/302114/samsung-galaxy-s24-ultra-review"
+              class="g-post top-post"
+            >
+              <img src="/img/g-post-2.jpg" alt="" />
+              <!-- Image for the second grid post -->
+              <div class="post-info">
+                <span class="label">Samsung Mobile</span>
+                <!-- Category label for the post -->
+                <h2>Samsung Galaxy S24 Ultra Review</h2>
+                <!-- Title of the second grid post -->
+                <p>07 May 2022</p>
+                <!-- Date of the second grid post -->
+              </div>
+            </a>
+
+            <!-- Third additional post -->
+            <a
+              href="https://www.rohitmehta.in/blog/iphone-16-launching-in-india-this-september/"
+              class="g-post top-post"
+            >
+              <img src="img/g-post-3.jpeg" alt="" />
+              <!-- Image for the third grid post -->
+              <div class="post-info">
+                <span class="label">Iphone 16</span>
+                <!-- Category label for the post -->
+                <h2>iPhone 16 Launching in India This September?</h2>
+                <!-- Title of the third grid post -->
+                <p>August 28, 2024</p>
+                <!-- Date of the third grid post -->
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="all-main-post flex">
+        <div class="left-sec">
+          <!-- Health Blog Section -->
+          <div class="health-news">
+            <div class="title flex">
+              <h3>Health Blog</h3>
+              <!-- Title of the health blog section -->
+              <a href="#"> View all </a>
+              <!-- Link to view all health posts -->
+            </div>
+
+            <div class="posts flex">
+              <!-- Featured health post -->
+              <a
+                href="https://www.everydayhealth.com/diet-nutrition/top-10-worst-foods-you-should-give-up/"
+                class="g-post post health-post"
+              >
+                <img src="img/health-post-1.jpg" alt="" />
+                <!-- Image for the featured health post -->
+                <div class="post-info">
+                  <span class="label">Food & Ingredients</span>
+                  <!-- Category label -->
+                  <h2>The Top 10 Worst Foods to Eat</h2>
+                  <!-- Title of the featured health post -->
+                  <p>June 17, 2024</p>
+                  <!-- Date of the featured health post -->
+                </div>
+              </a>
+
+              <div class="more-post flex">
+                <!-- Additional health posts -->
+                <a
+                  href="https://www.everydayhealth.com/supplements/how-much-magnesium-should-you-take-per-day/"
+                  class="g-post new-post flex health-post"
+                >
+                  <img src="img/health-post-2.jpg" alt="" />
+                  <!-- Image for the second health post -->
+                  <div class="post-info new-post-info">
+                    <span class="label">Nutritional Supplements</span>
+                    <!-- Category label -->
+                    <h2>How Much Magnesium Should You Take Per Day?</h2>
+                    <!-- Title of the second health post -->
+                    <p>25 May 2024</p>
+                    <!-- Date of the second health post -->
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.everydayhealth.com/news/things-your-doctor-wont-tell-you-about-dying/"
+                  class="g-post new-post flex health-post"
+                >
+                  <img src="img/health-post-3.jpg" alt="" />
+                  <!-- Image for the third health post -->
+                  <div class="post-info new-post-info">
+                    <span class="label">Longevity</span>
+                    <!-- Category label -->
+                    <h2>10 Things Your Doctor Won't Tell You About Dying</h2>
+                    <!-- Title of the third health post -->
+                    <p>25 July 2024</p>
+                    <!-- Date of the third health post -->
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.everydayhealth.com/skin-beauty/what-is-a-hydrafacial-how-it-works-benefits-risks-and-where-to-get-one/"
+                  class="g-post new-post flex health-post"
+                >
+                  <img src="img/health-post-4.jpg" alt="" />
+                  <!-- Image for the fourth health post -->
+                  <div class="post-info new-post-info">
+                    <span class="label">Skin Treatments & Procedures</span>
+                    <!-- Category label -->
+                    <h2>What Is a Hydrafacial? And How It Works?</h2>
+                    <!-- Title of the fourth health post -->
+                    <p>25 May 2022</p>
+                    <!-- Date of the fourth health post -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews Section -->
+          <div class="review-sec" id="review">
+            <div class="title flex">
+              <h3>Top Reviews</h3>
+              <!-- Title of the reviews section -->
+              <a href="#"> View all </a>
+              <!-- Link to view all reviews -->
+            </div>
+
+            <div class="review-posts">
+              <!-- Featured review post -->
+              <a
+                href="https://www.gsmarena.com/motorola_edge_50_and_50_neo_handson-review-2741.php"
+                class="g-post rev-post"
+              >
+                <div class="rev-post-img">
+                  <img src="/img/rev-post-1.jpg" alt="" />
+                  <!-- Image for the featured review post -->
+                  <span class="label">Motorola</span>
+                  <!-- Brand label -->
+                </div>
+                <div class="post-info rev-post-info">
+                  <h2>Motorola Edge 50 and Edge 50 Neo hands-on review</h2>
+                  <!-- Title of the featured review post -->
+                  <p>29 August 2024</p>
+                  <!-- Date of the featured review post -->
+                </div>
+              </a>
+
+              <!-- Review Post for Google Pixel 9 -->
+              <a
+                href="https://www.gsmarena.com/google_pixel_9-review-2739.php"
+                class="g-post rev-post"
+              >
+                <div class="rev-post-img">
+                  <img src="/img/rev-post-2.jpg" alt="" />
+                  <!-- Image for the Google Pixel 9 review -->
+                  <span class="label">Google</span>
+                  <!-- Brand label for Google -->
+                </div>
+                <div class="post-info rev-post-info">
+                  <h2>Google Pixel 9 review</h2>
+                  <!-- Title of the Google Pixel 9 review -->
+                  <p>23 August 2022</p>
+                  <!-- Date of the Google Pixel 9 review -->
+                </div>
+              </a>
+
+              <!-- Review Post for Nubia Z60S Pro and Z60 Ultra -->
+              <a
+                href="https://www.gsmarena.com/nubia_z60s_pro_z60_ultra_leading_version_new_price-news-64378.php"
+                class="g-post rev-post"
+              >
+                <div class="rev-post-img">
+                  <img src="/img/rev-post-3.jpg" alt="" />
+                  <!-- Image for the Nubia review -->
+                  <span class="label">nubia</span>
+                  <!-- Brand label for Nubia -->
+                </div>
+                <div class="post-info rev-post-info">
+                  <h2>
+                    nubia Z60S Pro and Z60 Ultra Leading Version get price cuts
+                  </h2>
+                  <!-- Title of the Nubia review -->
+                  <p>03 September 2024</p>
+                  <!-- Date of the Nubia review -->
+                </div>
+              </a>
+
+              <!-- Launch Announcement for Realme Narzo 70 Turbo -->
+              <a
+                href="https://www.gsmarena.com/realme_narzo_70_turbo_is_launching_on_september_9-news-64374.php"
+                class="g-post rev-post"
+              >
+                <div class="rev-post-img">
+                  <img src="/img/rev-post-4.jpg" alt="" />
+                  <!-- Image for the Realme Narzo 70 Turbo announcement -->
+                  <span class="label">Realme Narzo</span>
+                  <!-- Brand label for Realme Narzo -->
+                </div>
+                <div class="post-info rev-post-info">
+                  <h2>Realme Narzo 70 Turbo is launching on September 9</h2>
+                  <!-- Title of the launch announcement -->
+                  <p>02 September 2024</p>
+                  <!-- Date of the launch announcement -->
+                </div>
+              </a>
+
+              <!--  -->
+              <!-- Review Post for Apple iPad Pro 13 (2024) -->
+              <a
+                href="https://www.gsmarena.com/apple_ipad_pro_13_(2024)-12987.php"
+                class="g-post rev-post"
+              >
+                <div class="rev-post-img">
+                  <img src="/img/rev-post-5.jpg" alt="" />
+                  <!-- Image for the Apple iPad Pro review -->
+                  <span class="label">Apple iPad</span>
+                  <!-- Brand label for Apple iPad -->
+                </div>
+                <div class="post-info rev-post-info">
+                  <h2>Apple iPad Pro 13 (2024) review</h2>
+                  <!-- Title of the Apple iPad Pro review -->
+                  <p>25 May 2024</p>
+                  <!-- Date of the Apple iPad Pro review -->
+                </div>
+              </a>
+
+              <!-- Review Post for Apple Watch Ultra 2 -->
+              <a
+                href="https://www.gsmarena.com/apple_watch_ultra_2-12560.php"
+                class="g-post rev-post"
+              >
+                <div class="rev-post-img">
+                  <img src="/img/rev-post-6.jpg" alt="" />
+                  <!-- Image for the Apple Watch Ultra 2 specification -->
+                  <span class="label">Apple</span>
+                  <!-- Brand label for Apple -->
+                </div>
+                <div class="post-info rev-post-info">
+                  <h2>Apple Watch Ultra 2 Specification</h2>
+                  <!-- Title of the Apple Watch Ultra 2 specification -->
+                  <p>25 January 2024</p>
+                  <!-- Date of the Apple Watch Ultra 2 specification -->
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="gadget-sec flex">
+            <!-- Container for the gadget section, using flexbox for layout -->
+            <div class="gadgets">
+              <!-- Wrapper for the gadgets content -->
+              <div class="title flex">
+                <!-- Title section with flex layout -->
+                <h3>Future Techs</h3>
+                <!-- Main title for the Future Techs section -->
+                <a href="#"> View all </a>
+                <!-- Link to view all future tech posts -->
+              </div>
+              <div class="gadget-posts">
+                <!-- Container for individual gadget posts -->
+                <!-- Gadget posts will be inserted here -->
+                <!-- Gadget Post for Samsung Galaxy Ring -->
+                <a
+                  href="https://www.techradar.com/health-fitness/i-spent-24-hours-with-the-samsung-galaxy-ring-and-its-scarily-good-so-far"
+                  class="g-post pop-post gadget-post"
+                >
+                  <img src="/img/gad-post-1.jpg" alt="" />
+                  <!-- Image for the Samsung Galaxy Ring post -->
+                  <div class="post-info gadget-post-info">
+                    <!-- Container for post information -->
+                    <span class="label">Samsung</span>
+                    <!-- Brand label for Samsung -->
+                    <h2>I've worn the Samsung Galaxy Ring for a day</h2>
+                    <!-- Title of the post -->
+                    <p>20 July 2024</p>
+                    <!-- Date of the post -->
+                  </div>
+                </a>
+
+                <!-- Gadget Post for Apple Vision Pro -->
+                <a
+                  href="https://www.wired.com/review/apple-vision-pro/"
+                  class="g-post flex new-post p-post pop-post gadget-post"
+                >
+                  <img src="/img/gad-post-2.jpg" alt="" />
+                  <!-- Image for the Apple Vision Pro post -->
+                  <div class="post-info gadget-post-info new-post-info">
+                    <!-- Container for post information -->
+                    <span class="label">Apple</span>
+                    <!-- Brand label for Apple -->
+                    <h2>
+                      The Vision Pro is a big leap for spatial computing in an
+                      unfriendly package.
+                    </h2>
+                    <!-- Title of the post -->
+                    <p>25 March 2022</p>
+                    <!-- Date of the post -->
+                  </div>
+                </a>
+
+                <!-- Gadget Post for Lenovo Transparent Laptop -->
+                <a
+                  href="https://www.tomsguide.com/laptops/lenovo-thinkbook-transparent-display-laptop-hands-on"
+                  class="g-post flex new-post p-post pop-post gadget-post"
+                >
+                  <img src="/img/gad-post-3.jpg" alt="" />
+                  <!-- Image for the Lenovo transparent laptop post -->
+                  <div class="post-info gadget-post-info new-post-info">
+                    <!-- Container for post information -->
+                    <span class="label">Lenovo</span>
+                    <!-- Brand label for Lenovo -->
+                    <h2>
+                      I just tried Lenovo's transparent laptop of the future
+                    </h2>
+                    <!-- Title of the post -->
+                    <p>25 February 2022</p>
+                    <!-- Date of the post -->
+                  </div>
+                </a>
+
+                <!-- Gadget Post for Ray-Ban Meta Smart Glasses -->
+                <a
+                  href="https://www.wired.com/review/review-ray-ban-meta-smart-glasses/"
+                  class="g-post flex new-post p-post pop-post gadget-post"
+                >
+                  <img src="/img/gad-post-4.png" alt="" />
+                  <!-- Image for the Ray-Ban Meta Smart Glasses post -->
+                  <div class="post-info gadget-post-info new-post-info">
+                    <!-- Container for post information -->
+                    <span class="label">Ray-Ban</span>
+                    <!-- Brand label for Ray-Ban -->
+                    <h2>
+                      Ray-Ban Meta Smart Glasses, Impressive audio and
+                      surprisingly decent image
+                    </h2>
+                    <!-- Title of the post -->
+                    <p>25 November 2023</p>
+                    <!-- Date of the post -->
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="laptops">
+              <!-- Container for the entire laptops section -->
+              <div class="title flex">
+                <!-- Flex container for the title and link -->
+                <h3>Laptop Reviews</h3>
+                <!-- Header for the section, indicating it's about laptop reviews -->
+                <a href="#"> View all </a>
+                <!-- Link to view all laptop reviews (URL can be specified later) -->
+              </div>
+
+              <div class="laptop-posts">
+                <!-- Container for laptop posts -->
+                <!--  -->
+                <a
+                  href="https://www.notebookcheck.net/Apple-MacBook-Air-13-M3-review-A-lot-faster-and-with-Wi-Fi-6E.811129.0.html"
+                  class="g-post pop-post laptop-post"
+                >
+                  <img src="/img/lap-post-1.jpg" alt="" />
+                  <!-- Image of the laptop review -->
+                  <div class="post-info laptop-post-info">
+                    <!-- Container for post information -->
+                    <span class="label">MacBook</span>
+                    <!-- Label indicating the type of laptop -->
+                    <h2>
+                      MacBook Air 13-inch (M3) review: Seeking portable
+                      perfection.
+                    </h2>
+                    <!-- Title of the review -->
+                    <p>19 March 2024</p>
+                    <!-- Date of the review -->
+                  </div>
+                </a>
+
+                <!--  -->
+                <a
+                  href="https://www.laptopmag.com/asus-rog-strix-scar-18-review"
+                  class="g-post new-post p-post flex laptop-post"
+                >
+                  <img src="/img/lap-post-2.jpg" alt="" />
+                  <!-- Image of the Asus laptop review -->
+                  <div class="post-info laptop-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <span class="label">Asus</span>
+                    <!-- Label indicating the brand of the laptop -->
+                    <h2>Asus ROG Strix Scar 18 review: A gaming kingslayer</h2>
+                    <!-- Title of the review -->
+                    <p>11 February 2024</p>
+                    <!-- Date of the review -->
+                  </div>
+                </a>
+
+                <!--  -->
+                <a
+                  href="https://www.laptopmag.com/laptops/gaming-laptops-pcs/lenovo-legion-7i-gen-9"
+                  class="g-post new-post p-post flex laptop-post"
+                >
+                  <img src="/img/lap-post-3.jpg" alt="" />
+                  <!-- Image of the Lenovo laptop review -->
+                  <div class="post-info laptop-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <span class="label">Lenovo</span>
+                    <!-- Label indicating the brand of the laptop -->
+                    <h2>
+                      Lenovo Legion 7i Gen 9 review: A stunning display that
+                      keeps you just under $2,000
+                    </h2>
+                    <!-- Title of the review -->
+                    <p>6 July 2024</p>
+                    <!-- Date of the review -->
+                  </div>
+                </a>
+
+                <!--  -->
+                <a href="#" class="g-post new-post p-post flex laptop-post">
+                  <!-- Placeholder link for another laptop review -->
+                  <img src="/img/lap-post-4.jpg" alt="" />
+                  <!-- Image of the Microsoft Surface Pro review -->
+                  <div class="post-info laptop-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <span class="label">Laptop</span>
+                    <!-- Label indicating the type of laptop -->
+                    <h2>
+                      Microsoft Surface Pro (11th Edition) review: Great, but is
+                      it $1,949 great?
+                    </h2>
+                    <!-- Title of the review -->
+                    <p>27 June 2024</p>
+                    <!-- Date of the review -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="latest-post-sec" id="latest">
+            <!-- Container for the latest posts section with an ID for potential JavaScript or CSS targeting -->
+            <div class="title flex">
+              <!-- Flex container for the section title and "View all" link -->
+              <h3>Latest Posts</h3>
+              <!-- Header indicating this section contains the latest posts -->
+              <a href="#"> View all </a>
+              <!-- Link to view all latest posts (URL can be specified later) -->
+            </div>
+
+            <div class="latest-posts flex">
+              <!-- Container for the latest posts section, using flex layout -->
+              <!--  -->
+              <div class="latest-data latestdata">
+                <!-- Wrapper for the individual latest post data -->
+                <!-- 1 -->
+                <a
+                  href="https://indianexpress.com/article/technology/laptops/ifa-2024-intel-core-ultra-200v-ai-processor-launch-9548549/"
+                  class="g-post flex latest-post"
+                >
+                  <div class="latest-post-img">
+                    <!-- Container for the post image and label -->
+                    <img src="/img/late-post-1.jpg" alt="" />
+                    <!-- Image for the latest post -->
+                    <span class="label">Latest Post</span>
+                    <!-- Label indicating this is a latest post -->
+                  </div>
+                  <div class="post-info latest-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <h2>
+                      IFA 2024: Intel launches Core Ultra 200V series processors
+                      for AI PCs
+                    </h2>
+                    <!-- Title of the latest post -->
+                    <h5>
+                      Intel unveils 2nd-gen AI processors: Core Ultra 200V
+                      series to power 80+ laptops with up to 3x performance
+                      boost, 20-hour battery, and enhanced AI capabilities.....
+                    </h5>
+                    <!-- Subheading providing more details about the post -->
+                    <p>3 September 2024</p>
+                    <!-- Date of the latest post -->
+                  </div>
+                </a>
+
+                <!-- 2 -->
+                <a
+                  href="https://indianexpress.com/article/technology/mobile-tabs/iphone-11-to-iphone-16-features-upgrades-9547729/"
+                  class="g-post flex latest-post"
+                >
+                  <div class="latest-post-img">
+                    <!-- Container for the post image and label -->
+                    <img src="/img/late-post-2.jpg" alt="" />
+                    <!-- Image for the latest post about iPhones -->
+                    <span class="label">Latest Post</span>
+                    <!-- Label indicating this is a latest post -->
+                  </div>
+                  <div class="post-info latest-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <h2>
+                      From iPhone 11 to iPhone 16: Tracing the evolution of the
+                      iPhone
+                    </h2>
+                    <!-- Title of the latest post -->
+                    <h5>
+                      Since its inception, Apple has fine-tuned the based models
+                      of its iPhone each year. Consistent innovations have made
+                      these baseline iPhones one of the most...
+                    </h5>
+                    <!-- Subheading providing more details about the post -->
+                    <p>29 August 2024</p>
+                    <!-- Date of the latest post -->
+                  </div>
+                </a>
+
+                <!-- 3 -->
+                <a
+                  href="https://indianexpress.com/article/technology/science/rig-veda-hindu-text-oldest-record-solar-eclipse-9548062/"
+                  class="g-post flex latest-post"
+                >
+                  <div class="latest-post-img">
+                    <!-- Container for the post image and label -->
+                    <img src="/img/late-post-3.jpg" alt="" />
+                    <!-- Image for the latest post about the Rig Veda -->
+                    <span class="label">Latest Post</span>
+                    <!-- Label indicating this is a latest post -->
+                  </div>
+                  <div class="post-info latest-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <h2>
+                      Ancient Hindu text Rig Veda mentions solar eclipse that
+                      took place 6,000 years ago
+                    </h2>
+                    <!-- Title of the latest post -->
+                    <h5>
+                      Astronomers recently stumbled across what might be the
+                      oldest mention of a solar eclipse. In the ancient Hindu
+                      text Rig Veda, they discovered mention of an
+                    </h5>
+                    <!-- Subheading providing more details about the post -->
+                    <p>25 August 2024</p>
+                    <!-- Date of the latest post -->
+                  </div>
+                </a>
+
+                <!-- 4 -->
+                <a
+                  href="https://indianexpress.com/article/technology/tech-news-technology/x-tv-app-everything-we-know-so-far-9548445/"
+                  class="g-post flex latest-post"
+                >
+                  <div class="latest-post-img">
+                    <!-- Container for the post image and label -->
+                    <img src="/img/late-post-4.jpg" alt="" />
+                    <!-- Image for the latest post about the X TV app -->
+                    <span class="label">Latest Post</span>
+                    <!-- Label indicating this is a latest post -->
+                  </div>
+                  <div class="post-info latest-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <h2>
+                      Elon Musk announces X TV app: Here's everything we know
+                    </h2>
+                    <!-- Title of the latest post -->
+                    <h5>
+                      Elon Musk recently took to his social media platform X to
+                      announce a new streaming service called X TV. As the name
+                      suggests, the new app lets you stream
+                    </h5>
+                    <!-- Subheading providing more details about the post -->
+                    <p>1 September 2024</p>
+                    <!-- Date of the latest post -->
+                  </div>
+                </a>
+
+                <!-- 5 -->
+                <a
+                  href="https://indianexpress.com/article/technology/tech-news-technology/ifa-2024-ai-gadgets-and-concept-devices-europes-tech-show-9547261/"
+                  class="g-post flex latest-post"
+                >
+                  <div class="latest-post-img">
+                    <!-- Container for the post image and label -->
+                    <img src="/img/late-post-5.jpg" alt="" />
+                    <!-- Image for the latest post about AI gadgets -->
+                    <span class="label">Latest Post</span>
+                    <!-- Label indicating this is a latest post -->
+                  </div>
+                  <div class="post-info latest-post-info new-post-info">
+                    <!-- Container for the post information -->
+                    <h2>
+                      IFA 2024: AI gadgets and concept devices to headline
+                      Europe's biggest tech show
+                    </h2>
+                    <!-- Title of the latest post -->
+                    <h5>
+                      When thousands flock to Berlin this week to attend the
+                      Internationale Funkausstellung (IFA), artificial
+                      intelligence will be woven into presentations, booths
+                    </h5>
+                    <!-- Subheading providing more details about the post -->
+                    <p>2 September 2024</p>
+                    <!-- Date of the latest post -->
+                  </div>
+                </a>
+              </div>
+              <!-- Closing div for the latest-data container -->
+
+              <button class="load-more">
+                <!-- Button to load more posts -->
+                Load More <i class="fa-solid fa-angle-down"></i>
+                <!-- Button text and icon -->
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-sec">
+          <!-- Container for the right section of the layout -->
+          <div class="social">
+            <!-- Wrapper for social media links or follow options -->
+            <div class="title flex">
+              <!-- Container for the title, using flex layout for alignment -->
+              <h3>Follow Us</h3>
+              <!-- Heading for the social media section -->
+            </div>
+
+            <div class="social-links flex">
+              <!-- Container for social media links, using flex layout for alignment -->
+              <a href="#" target="_blank">
+                <!-- Link to Facebook, opens in a new tab -->
+                <button class="social-btn">
+                  <!-- Button for Facebook link -->
+                  <i class="fa-brands fa-facebook"></i> Facebook
+                  <!-- Facebook icon and label -->
+                </button>
+              </a>
+
+              <a href="#" target="_blank">
+                <!-- Link to Twitter, opens in a new tab -->
+                <button class="social-btn">
+                  <!-- Button for Twitter link -->
+                  <i class="fa-brands fa-x-twitter"></i> Twitter
+                  <!-- Twitter icon and label -->
+                </button>
+              </a>
+
+              <a href="#" target="_blank">
+                <!-- Link to Instagram, opens in a new tab -->
+                <button class="social-btn">
+                  <!-- Button for Instagram link -->
+                  <i class="fa-brands fa-instagram"></i> Instagram
+                  <!-- Instagram icon and label -->
+                </button>
+              </a>
+
+              <a href="#" target="_blank">
+                <!-- Link to YouTube, opens in a new tab -->
+                <button class="social-btn">
+                  <!-- Button for YouTube link -->
+                  <i class="fa-brands fa-youtube"></i> YouTube
+                  <!-- YouTube icon and label -->
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div class="popular-sec">
+            <!-- Container for the popular posts section -->
+            <div class="title flex">
+              <!-- Container for the title, using flex layout for alignment -->
+              <h3>Popular Posts</h3>
+              <!-- Heading for the popular posts section -->
+            </div>
+
+            <!-- 1 -->
+            <a
+              href="https://indianexpress.com/article/technology/artificial-intelligence/meta-ai-on-whatsapp-voice-search-9545758/"
+              class="g-post popu-post popular"
+            >
+              <img src="/img/pop-post-1.jpg" alt="" />
+              <!-- Image for the popular post, alt attribute is empty (consider adding descriptive text) -->
+              <div class="post-info popular-post-info">
+                <!-- Container for post information -->
+                <span class="label">Popular Post</span>
+                <!-- Label indicating the post is popular -->
+                <h2>
+                  Why accessing Meta AI on WhatsApp will soon be a lot easier
+                  <!-- Title of the popular post -->
+                </h2>
+                <p>20 July 2024</p>
+                <!-- Date of the post -->
+              </div>
+            </a>
+
+            <div class="popular-posts flex">
+              <!-- Container for popular posts, using flex layout for alignment -->
+              <!-- 2 -->
+              <a
+                href="https://indianexpress.com/article/technology/mobile-tabs/oneplus-13-design-features-specs-9544476/"
+                class="g-post new-post flex p-post popular-post popular"
+              >
+                <img src="/img/pop-post-2.png" alt="" />
+                <!-- Image for the OnePlus 13 post, alt attribute is empty (consider adding descriptive text) -->
+                <div class="post-info popular-post-info new-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Popular Post</span>
+                  <!-- Label indicating the post is popular -->
+                  <h2>OnePlus's next flagship</h2>
+                  <!-- Title of the OnePlus post -->
+                  <p>2 August 2024</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+
+              <!-- 3 -->
+              <a
+                href="https://indianexpress.com/article/technology/techook/truecaller-wearos-smartwatch-install-features-9544327/"
+                class="g-post new-post flex p-post popular-post popular"
+              >
+                <img src="/img/pop-post-3.jpg" alt="" />
+                <!-- Image for the wearOS post, alt attribute is empty (consider adding descriptive text) -->
+                <div class="post-info popular-post-info new-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Popular Post</span>
+                  <!-- Label indicating the post is popular -->
+                  <h2>New feature in wearOS</h2>
+                  <!-- Title of the wearOS post -->
+                  <p>31 August 2024</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+
+              <!-- 4 -->
+              <a
+                href="https://indianexpress.com/article/technology/artificial-intelligence/openai-names-political-veteran-lehane-as-head-of-global-policy-9542786/"
+                class="g-post new-post flex p-post popular-post popular"
+              >
+                <img src="/img/pop-post-4.png" alt="" />
+                <!-- Image for the OpenAI post, alt attribute is empty (consider adding descriptive text) -->
+                <div class="post-info popular-post-info new-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Popular Post</span>
+                  <!-- Label indicating the post is popular -->
+                  <h2>OpenAI Latest News in</h2>
+                  <!-- Title of the OpenAI post -->
+                  <p>31 August 2024</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="travel-sec" id="travel">
+            <!-- Container for the travel section, with an ID for navigation -->
+            <div class="title flex">
+              <!-- Container for the section title, using flex layout for alignment -->
+              <h3>Travel Blog</h3>
+              <!-- Heading for the travel blog section -->
+            </div>
+
+            <div class="travel-posts flex">
+              <!-- 1 -->
+              <a
+                href="https://www.walkalgarve.com/algarve/falesia-beach-one-of-the-best-in-the-world"
+                class="g-post rev-post travel-post"
+              >
+                <div class="rev-post-img">
+                  <!-- Container for the post image and label -->
+                  <img src="/img/travel1.jpg" alt="" />
+                  <!-- Image for the Praia da Falésia post, alt attribute is empty (consider adding descriptive text) -->
+                  <span class="label">Travel Blog</span>
+                  <!-- Label indicating the post is part of the travel blog -->
+                </div>
+
+                <div class="post-info rev-post-info travel-post-info">
+                  <!-- Container for post information -->
+                  <h2>Praia da Falésia</h2>
+                  <!-- Title of the Praia da Falésia post -->
+                  <p>25 July 2024</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+
+              <!-- 2 -->
+              <a
+                href="https://italien.blog/en/lampedusa-the-hidden-pearl-of-italy/"
+                class="g-post rev-post travel-post"
+              >
+                <div class="rev-post-img">
+                  <!-- Container for the post image and label -->
+                  <img src="/img/travel2.jpg" alt="" />
+                  <!-- Image for the Spiaggia dei Conigli post, alt attribute is empty (consider adding descriptive text) -->
+                  <span class="label">Travel Blog</span>
+                  <!-- Label indicating the post is part of the travel blog -->
+                </div>
+                <div class="post-info rev-post-info travel-post-info">
+                  <!-- Container for post information -->
+                  <h2>Spiaggia dei Conigli</h2>
+                  <!-- Title of the Spiaggia dei Conigli post -->
+                  <p>25 April 2024</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+
+              <!-- 3 -->
+              <a
+                href="https://www.paradise-found-in-maui.com/kaanapali-beach-maui.html"
+                class="g-post rev-post travel-post"
+              >
+                <div class="rev-post-img">
+                  <!-- Container for the post image and label -->
+                  <img src="/img/travel3.jpg" alt="" />
+                  <!-- Image for the Ka'anapali Beach post, alt attribute is empty (consider adding descriptive text) -->
+                  <span class="label">Travel Blog</span>
+                  <!-- Label indicating the post is part of the travel blog -->
+                </div>
+                <div class="post-info rev-post-info travel-post-info">
+                  <!-- Container for post information -->
+                  <h2>Ka'anapali Beach</h2>
+                  <!-- Title of the Ka'anapali Beach post -->
+                  <p>30 April 2022</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+
+              <!-- 4 -->
+              <a
+                href="https://weareglobaltravellers.com/2018/06/manly-guide/"
+                class="g-post rev-post travel-post"
+              >
+                <div class="rev-post-img">
+                  <!-- Container for the post image and label -->
+                  <img src="/img/travel4.jpg" alt="" />
+                  <!-- Image for the Manly Beach post, alt attribute is empty (consider adding descriptive text) -->
+                  <span class="label">Travel Blog</span>
+                  <!-- Label indicating the post is part of the travel blog -->
+                </div>
+                <div class="post-info rev-post-info travel-post-info">
+                  <!-- Container for post information -->
+                  <h2>Manly Beach</h2>
+                  <!-- Title of the Manly Beach post -->
+                  <p>5 May 2022</p>
+                  <!-- Date of the post -->
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="newsletter-sec" id="contact">
+            <!-- Container for the newsletter section, with an ID for navigation -->
+            <h2>Newsletter</h2>
+            <!-- Heading for the newsletter section -->
+            <p>
+              Sign up for our newsletter to receive exclusive updates,
+              <!-- Description encouraging users to sign up -->
+              promotions, and new blog posts.
+              <!-- Continuation of the description -->
+            </p>
+
+            <form action="submit" class="newsletter-form">
+              <!-- Form for newsletter signup, action specifies where to send the data -->
+              <input
+                type="email"
+                name="checkbox"
+                placeholder="Enter your email"
+                id=""
+                required
+              />
+              <button type="submit">Subscribe</button>
+              <!-- Button to submit the form -->
+            </form>
+          </div>
+
+          <div class="comment-box">
+            <!-- Container for the comments section -->
+            <div class="title flex">
+              <!-- Title container with a flex layout for alignment -->
+              <h3>Comments</h3>
+              <!-- Heading for the comments section -->
+              <a href="#">View All</a>
+              <!-- Link to view all comments (URL to be specified) -->
+            </div>
+            <div class="comment-sec">
+              <!-- Container for individual comments -->
+              <!--  -->
+              <div class="comment flex">
+                <!-- Individual comment container with flex layout -->
+                <div class="user-img">
+                  <!-- Container for the user's image -->
+                  <img src="/img/user.png" alt="" />
+                  <!-- Placeholder image for the user, alt attribute is empty (consider adding descriptive text) -->
+                </div>
+
+                <div class="comment-info">
+                  <!-- Container for the comment information -->
+                  <h4>John Doe</h4>
+                  <!-- Name of the user who commented -->
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <!-- Comment text -->
+                  </p>
+                  <span>25 May 2022</span>
+                  <!-- Date of the comment -->
+                </div>
+              </div>
+              <!--  -->
+              <div class="comment flex">
+                <!-- Another individual comment container -->
+                <div class="user-img">
+                  <!-- Container for the user's image -->
+                  <img src="/img/user.png" alt="" />
+                  <!-- Placeholder image for the user, alt attribute is empty (consider adding descriptive text) -->
+                </div>
+
+                <div class="comment-info">
+                  <!-- Container for the comment information -->
+                  <h4>John Doe</h4>
+                  <!-- Name of the user who commented -->
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <!-- Comment text -->
+                  </p>
+                  <span>25 May 2022</span>
+                  <!-- Date of the comment -->
+                </div>
+              </div>
+              <!--  -->
+              <div class="comment flex">
+                <!-- Another individual comment container -->
+                <div class="user-img">
+                  <!-- Container for the user's image -->
+                  <img src="/img/user.png" alt="" />
+                  <!-- Placeholder image for the user, alt attribute is empty (consider adding descriptive text) -->
+                </div>
+
+                <div class="comment-info">
+                  <!-- Container for the comment information -->
+                  <h4>John Doe</h4>
+                  <!-- Name of the user who commented -->
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <!-- Comment text -->
+                  </p>
+                  <span>25 May 2022</span>
+                  <!-- Date of the comment -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-box">
+            <!-- Container for the categories section -->
+            <div class="title flex">
+              <!-- Title container with a flex layout for alignment -->
+              <h3>Categories</h3>
+              <!-- Heading for the categories section -->
+              <!-- <a href="#">View All</a> -->
+              <!-- Commented out link to view all categories (could be activated if needed) -->
+            </div>
+
+            <div class="categories">
+              <!-- Container for individual category links -->
+              <!--  -->
+              <a href="#" class="category">
+                <!-- Link for the Travel category -->
+                <h3><i class="fa-solid fa-globe"></i>Travel</h3>
+                <!-- Category name with an icon -->
+                <p>(6)</p>
+                <!-- Number of posts in this category -->
+              </a>
+
+              <!--  -->
+              <a href="#" class="category">
+                <!-- Link for the Gadgets category -->
+                <h3><i class="fa-solid fa-mobile"></i>Gadgets</h3>
+                <!-- Category name with an icon -->
+                <p>(10)</p>
+                <!-- Number of posts in this category -->
+              </a>
+
+              <!--  -->
+              <a href="#" class="category">
+                <!-- Link for the Health category -->
+                <h3><i class="fa-solid fa-notes-medical"></i>Health</h3>
+                <!-- Category name with an icon -->
+                <p>(8)</p>
+                <!-- Number of posts in this category -->
+              </a>
+
+              <!--  -->
+              <a href="#" class="category">
+                <!-- Link for the Books category -->
+                <h3><i class="fa-solid fa-book"></i>Books</h3>
+                <!-- Category name with an icon -->
+                <p>(4)</p>
+                <!-- Number of posts in this category -->
+              </a>
+            </div>
+          </div>
+
+          <div class="tags-box">
+            <!-- Container for the tags section -->
+            <div class="title flex">
+              <!-- Title container with a flex layout for alignment -->
+              <h3>Tags</h3>
+              <!-- Heading for the tags section -->
+              <a href="#">View All</a>
+              <!-- Link to view all tags (URL to be specified) -->
+            </div>
+
+            <div class="tags-sec flex">
+              <!-- Container for individual tags with a flex layout -->
+              <!--  -->
+              <a href="#" class="tag">#Travel</a>
+              <!-- Link for the Travel tag -->
+              <!--  -->
+              <a href="#" class="tag">#Gadgets</a>
+              <!-- Link for the Gadgets tag -->
+              <!--  -->
+              <a href="#" class="tag">#Health</a>
+              <!-- Link for the Health tag -->
+              <!--  -->
+              <a href="#" class="tag">#Books</a>
+              <!-- Link for the Books tag -->
+              <!--  -->
+              <a href="#" class="tag">#Tech</a>
+              <!-- Link for the Tech tag -->
+              <!--  -->
+              <a href="#" class="tag">#Reviews</a>
+              <!-- Link for the Reviews tag -->
+              <!--  -->
+              <a href="#" class="tag">#Lifestyle</a>
+              <!-- Link for the Lifestyle tag -->
+              <!--  -->
+              <a href="#" class="tag">#Music</a>
+              <!-- Link for the Music tag -->
+              <!--  -->
+              <a href="#" class="tag">#Food</a>
+              <!-- Link for the Food tag -->
+              <!--  -->
+              <a href="#" class="tag">#Design</a>
+              <!-- Link for the Design tag -->
+            </div>
+          </div>
+        </div>
+        <!-- Closes the last opened <div> element, which could be a container for a specific section of content -->
+      </section>
+      <!-- Closes the <section> element, indicating the end of a thematic grouping of content -->
+    </main>
+    <!-- Closes the <main> element, which represents the main content of the document -->
+
+    <footer id="footer">
+      <!-- Footer element with an ID for styling or scripting -->
+      <section class="container footer-sec">
+        <!-- Section within the footer, styled with a container class -->
+        <div class="first-footer flex">
+          <!-- Flex container for layout of footer content -->
+          <div class="footer-categories-bx">
+            <!-- Box for footer categories -->
+            <h3>CATEGORIES</h3>
+            <!-- Heading for the categories section -->
+            <div class="footer-categories">
+              <!-- Container for individual category links -->
+              <a href="#">
+                <!-- Link for the Gadgets category -->
+                <h4>Gadgets</h4>
+                <!-- Category name -->
+                <p>(10)</p>
+                <!-- Number of posts in this category -->
+              </a>
+              <a href="#">
+                <!-- Link for the Travel category -->
+                <h4>Travel</h4>
+                <!-- Category name -->
+                <p>(8)</p>
+                <!-- Number of posts in this category -->
+              </a>
+              <a href="#">
+                <!-- Link for the Reviews category -->
+                <h4>Reviews</h4>
+                <!-- Category name -->
+                <p>(6)</p>
+                <!-- Number of posts in this category -->
+              </a>
+            </div>
+
+            <!--  -->
+            <div class="footer-tags">
+              <!-- Box for footer tags -->
+              <h3>TAGS</h3>
+              <!-- Heading for the tags section -->
+              <div class="tags-sec flex">
+                <!-- Flex container for individual tags -->
+                <!--  -->
+                <a href="#" class="tag">#Travel</a>
+                <!-- Link for the Travel tag -->
+                <!--  -->
+                <a href="#" class="tag">#Gadgets</a>
+                <!-- Link for the Gadgets tag -->
+                <!--  -->
+                <a href="#" class="tag">#Health</a>
+                <!-- Link for the Health tag -->
+                <!--  -->
+                <a href="#" class="tag">#Books</a>
+                <!-- Link for the Books tag -->
+                <!--  -->
+                <a href="#" class="tag">#Tech</a>
+                <!-- Link for the Tech tag -->
+                <!--  -->
+                <a href="#" class="tag">#Reviews</a>
+                <!-- Link for the Reviews tag -->
+              </div>
+            </div>
+          </div>
+
+          <div class="f-posts-box">
+            <!-- Container for the latest and popular posts section -->
+            <h3>LATEST POSTS</h3>
+            <!-- Heading for the latest posts section -->
+            <div class="f-latest-posts latestdata flex">
+              <!-- Flex container for latest posts -->
+              <!-- 1 -->
+              <a
+                href="https://indianexpress.com/article/technology/laptops/ifa-2024-intel-core-ultra-200v-ai-processor-launch-9548549/"
+                class="g-post new-post flex p-post"
+              >
+                <img src="/img/late-post-1.jpg" alt="" />
+                <!-- Image for the Intel post -->
+                <div class="post-info new-post-info popular-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Latest Post</span>
+                  <!-- Label indicating this is a latest post -->
+                  <h2>IFA 2024: Intel</h2>
+                  <!-- Title of the Intel post -->
+                  <p>3 September 2024</p>
+                  <!-- Date of the Intel post -->
+                </div>
+              </a>
+
+              <!-- 2 -->
+              <a
+                href="https://indianexpress.com/article/technology/mobile-tabs/iphone-11-to-iphone-16-features-upgrades-9547729/"
+                class="g-post new-post flex p-post"
+              >
+                <img src="/img/late-post-2.jpg" alt="" />
+                <!-- Image for the iPhone post -->
+                <div class="post-info new-post-info popular-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Latest Post</span>
+                  <!-- Label indicating this is a latest post -->
+                  <h2>iPhone 11 to iPhone 16</h2>
+                  <!-- Title of the iPhone post -->
+                  <p>29 August 2024</p>
+                  <!-- Date of the iPhone post -->
+                </div>
+              </a>
+
+              <!-- 3 -->
+              <a
+                href="https://indianexpress.com/article/technology/tech-news-technology/ifa-2024-ai-gadgets-and-concept-devices-europes-tech-show-9547261/"
+                class="g-post new-post flex p-post"
+              >
+                <img src="/img/late-post-5.jpg" alt="" />
+                <!-- Image for the AI gadgets post -->
+                <div class="post-info new-post-info popular-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Popular Post</span>
+                  <!-- Label indicating this is a popular post -->
+                  <h2>IFA 2024: AI</h2>
+                  <!-- Title of the AI gadgets post -->
+                  <p>2 September 2024</p>
+                  <!-- Date of the AI gadgets post -->
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="f-popu-post">
+            <!-- Container for the popular posts section -->
+            <h3>POPULAR POST</h3>
+            <!-- Heading for the popular posts section -->
+            <div class="f-latest-posts footer-popu flex">
+              <!-- Flex container for popular posts -->
+              <!-- 1 -->
+              <a
+                href="https://indianexpress.com/article/technology/mobile-tabs/oneplus-13-design-features-specs-9544476/"
+                class="g-post new-post flex p-post"
+              >
+                <img src="/img/pop-post-2.png" alt="" />
+                <!-- Image for the OnePlus post -->
+                <div class="post-info new-post-info popular-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Latest Post</span>
+                  <!-- Label indicating this is a latest post -->
+                  <h2>New flagship</h2>
+                  <!-- Title of the OnePlus post -->
+                  <p>25 August 2024</p>
+                  <!-- Date of the OnePlus post -->
+                </div>
+              </a>
+
+              <!-- 2 -->
+              <a
+                href="https://indianexpress.com/article/technology/techook/truecaller-wearos-smartwatch-install-features-9544327/"
+                class="g-post new-post flex p-post"
+              >
+                <img src="/img/pop-post-3.jpg" alt="" />
+                <!-- Image for the Truecaller post -->
+                <div class="post-info new-post-info popular-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Latest Post</span>
+                  <!-- Label indicating this is a latest post -->
+                  <h2>New feature</h2>
+                  <!-- Title of the Truecaller post -->
+                  <p>13 August 2024</p>
+                  <!-- Date of the Truecaller post -->
+                </div>
+              </a>
+
+              <!-- 3 -->
+              <a
+                href="https://indianexpress.com/article/technology/artificial-intelligence/openai-names-political-veteran-lehane-as-head-of-global-policy-9542786/"
+                class="g-post new-post flex p-post"
+              >
+                <img src="/img/pop-post-4.png" alt="" />
+                <!-- Image representing the article, alt text left empty for decorative purposes -->
+                <div class="post-info new-post-info popular-post-info">
+                  <!-- Container for post information -->
+                  <span class="label">Popular Post</span>
+                  <!-- Label indicating that this is a popular post -->
+                  <h2>Open AI News</h2>
+                  <!-- Title of the article -->
+                  <p>31 August 2024</p>
+                  <!-- Date of publication -->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="second-footer flex">
+          <!-- Container for the second footer section, using flexbox for layout -->
+          <div class="logo">
+            <!-- Logo container -->
+            <a href="#" class="flex">
+              <!-- Link to the homepage, styled as a flex container -->
+              <img src="/img/logo.png" alt="" />
+              <!-- Logo image, alt text left empty for decorative purposes -->
+              <h1>TechTales</h1>
+              <!-- Brand name -->
+            </a>
+          </div>
+
+          <!--  -->
+          <div class="f-social-icons">
+            <!-- Container for social media icons -->
+            <div class="social-link flex">
+              <!-- Flex container for social media links -->
+              <a href="#" title="facebook">
+                <!-- Link to Facebook -->
+                <i class="fa-brands fa-facebook"></i>
+                <!-- Font Awesome icon for Facebook -->
+              </a>
+              <a href="#" title="twitter">
+                <!-- Link to Twitter -->
+                <i class="fa-brands fa-x-twitter"></i>
+                <!-- Font Awesome icon for Twitter -->
+              </a>
+              <a href="#" title="youtube">
+                <!-- Link to YouTube -->
+                <i class="fa-brands fa-youtube"></i>
+                <!-- Font Awesome icon for YouTube -->
+              </a>
+              <a href="#" title="instagram">
+                <!-- Link to Instagram -->
+                <i class="fa-brands fa-instagram"></i>
+                <!-- Font Awesome icon for Instagram -->
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="third-footer flex">
+          <!-- Container for the third footer section, using flexbox for layout -->
+          <div class="copyright">
+            <!-- Copyright section -->
+            <h3>Copyright &copy; | All rights reserved</h3>
+            <!-- Copyright notice -->
+          </div>
+          <ul class="flex footer-nav">
+            <!-- Unordered list for footer navigation links, styled as a flex container -->
+            <li><a href="#">Home</a></li>
+            <!-- Link to the home page -->
+            <li><a href="#">About Us</a></li>
+            <!-- Link to the about us page -->
+            <li><a href="#">Privacy Policy</a></li>
+            <!-- Link to the privacy policy page -->
+            <li><a href="#">Contact Us</a></li>
+            <!-- Link to the contact us page -->
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <!-- Link to scroll back to the top of the page -->
+      <i class="fa-solid fa-up-long"></i>
+      <!-- Font Awesome icon for the upward scroll arrow -->
+    </a>
+
+    <script src="/JS/main.js"></script>
+    <!-- Main JavaScript file for the website -->
+    <script src="/JS/back-to-top.js"></script>
+    <!-- JavaScript file for the "back to top" functionality -->
+    <script src="/JS/toggle.js"></script>
+    <!-- JavaScript file for toggle functions, possibly for menus or themes -->
+  </body>
+</html>

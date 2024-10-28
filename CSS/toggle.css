@@ -1,0 +1,171 @@
+.dark {
+  background: #16161a; /* Dark background for the body */
+}
+
+.dark .main-nav {
+  background-color: #202024; /* Dark background for the main navigation */
+  box-shadow: 0 0 0; /* No shadow effect */
+}
+
+.dark .social-link i:hover {
+  color: var(--main-color); /* Change icon color on hover */
+}
+
+.dark .logo a h1 {
+  color: #fff; /* White color for the logo text */
+  font-family: "Titillium Web", sans-serif; /* Font family for the logo */
+}
+
+.dark .nav-one ul li a:hover {
+  color: var(--main-color); /* Change link color on hover in nav-one */
+}
+
+.dark .nav-list ul li a:hover,
+.dark .nav-list ul li a:hover i {
+  color: var(
+    --main-color
+  ); /* Change color for nav-list links and icons on hover */
+}
+
+.dark .nav-list ul li a,
+.dark .nav-list ul li a i {
+  color: #ffffffd8; /* Light gray color for nav-list links and icons */
+}
+
+.dark .search-bar i {
+  color: #fff; /* White color for search icon */
+  background-color: #333; /* Dark background for search icon */
+}
+
+.dark .search-bar i:hover {
+  color: var(--main-color); /* Change search icon color on hover */
+}
+
+.dark #search-input {
+  color: #fff; /* White text color for search input */
+  background-color: #202024; /* Dark background for search input */
+}
+
+.dark #search-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.71); /* Light gray color for placeholder text */
+}
+
+.dark .trending-sec {
+  background-color: #202024; /* Dark background for trending section */
+}
+
+.dark .text-change {
+  color: #fff; /* White color for text-change elements */
+}
+
+.dark .text-change:hover {
+  color: var(--main-color); /* Change color on hover for text-change elements */
+}
+
+.dark .left-right-change i {
+  color: #fff; /* White color for left-right change icons */
+  background-color: #2b2a2a; /* Dark background for icons */
+}
+
+.dark .left-right-change i:hover {
+  color: #fff; /* Keep icon color white on hover */
+}
+
+.dark .header-post-sec {
+  background: #202024; /* Dark background for header post section */
+}
+
+.dark .health-news,
+.dark .review-sec,
+.dark .latest-post-sec {
+  background: #202024; /* Dark background for various sections */
+  color: #fff; /* White text color for these sections */
+}
+
+.dark .new-post-info h2 {
+  color: #fff; /* White color for new post info headings */
+}
+
+.dark .social,
+.dark .popular-sec {
+  background: #202024; /* Dark background for social and popular sections */
+  color: #fff; /* White text color for these sections */
+}
+
+.dark .post-info h2 {
+  color: #fff; /* White color for post info headings */
+}
+
+.dark .gadgets,
+.dark .laptops {
+  background: #202024; /* Dark background for gadgets and laptops sections */
+  color: #fff; /* White text color for these sections */
+}
+.dark .travel-sec {
+  background: #202024; /* Dark background for travel section */
+  color: #fff; /* White text color for travel section */
+}
+
+.dark .newsletter-sec {
+  background: #202024; /* Dark background for newsletter section */
+  color: #fff; /* White text color for newsletter section */
+}
+
+.dark .newsletter-form input {
+  background: #202024; /* Dark background for newsletter input field */
+  color: #fff; /* White text color for input field */
+  border: none; /* No border for input field */
+}
+
+.dark .newsletter-form input:focus {
+  outline-color: var(
+    --main-color
+  ); /* Outline color for input field when focused */
+}
+
+.dark .latest-posts h5 {
+  color: #999; /* Light gray color for latest posts heading */
+}
+
+.dark .load-more {
+  background: #202024; /* Dark background for load more button */
+  color: #fff; /* White text color for load more button */
+}
+
+.dark .load-more:hover {
+  background: var(
+    --main-color
+  ); /* Change background color on hover for load more button */
+}
+
+.dark .comment-box {
+  background: #202024; /* Dark background for comment box */
+  color: #fff; /* White text color for comment box */
+}
+
+.dark .comment-info h4 {
+  color: #fff; /* White color for comment info heading */
+}
+
+.dark .comment-info p {
+  color: #999; /* Light gray color for comment info paragraph */
+}
+
+.dark .category-box {
+  background: #202024; /* Dark background for category box */
+  color: #fff; /* White text color for category box */
+}
+
+.dark .categories a h3,
+.dark .categories a p {
+  color: #d4d4d4; /* Light gray color for category links */
+}
+
+.dark .categories a:hover h3 {
+  color: var(--main-color); /* Change color on hover for category heading */
+}
+
+.dark .tags-box {
+  background: #202024; /* Dark background for tags box */
+  color: #fff; /* White text color for tags box */
+}

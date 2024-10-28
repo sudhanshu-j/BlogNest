@@ -1,0 +1,246 @@
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+  .third-footer {
+    color: #fff; /* Set text color to white for the third footer in this range */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .top-nav {
+    padding: 20px; /* Add padding to the top navigation */
+  }
+
+  .main-nav {
+    padding: 20px; /* Add padding to the main navigation */
+  }
+
+  .main-nav .logo i {
+    font-size: 25px; /* Set font size for logo icon */
+  }
+
+  .main-nav .logo h1 {
+    font-size: 25px; /* Set font size for logo heading */
+  }
+
+  .main-nav .nav-list ul li {
+    font-size: 12px; /* Set font size for navigation list items */
+    font-weight: 600; /* Set font weight to bold for navigation items */
+    color: #fff; /* Set text color to white for navigation items */
+  }
+
+  .main-nav .nav-list ul li a i {
+    font-size: 10px; /* Set font size for icons in navigation links */
+  }
+
+  .third-footer {
+    color: #fff; /* Set text color to white for the third footer */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Additional styles for screens narrower than 768px would go here */
+  .top-nav {
+    display: none; /* Hide the top navigation on small screens */
+  }
+
+  .text-change {
+    text-align: center; /* Center text for text-change elements */
+  }
+
+  .nav-on {
+    display: block; /* Show navigation button */
+    margin-right: 10px; /* Add margin to the right */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round corners */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  .nav-list ul {
+    position: absolute; /* Position the navigation list absolutely */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    z-index: 9999; /* Bring to the front */
+    background-color: rgb(144, 161, 176); /* Background color */
+    color: black; /* Text color */
+    padding: 20px; /* Padding around the list */
+    border-radius: 10px; /* Round corners */
+    gap: 50px; /* Space between items */
+    display: none; /* Initially hide the navigation list */
+  }
+
+  .nav-off {
+    display: block; /* Show navigation close button */
+    position: absolute; /* Position it absolutely */
+    right: 2%; /* Align to the right */
+    top: 2%; /* Align to the top */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Round corners */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  .logo a h1 {
+    font-size: 25px; /* Set font size for logo heading */
+  }
+
+  #close-icon {
+    right: 10px; /* Position close icon */
+  }
+
+  .trending-sec {
+    flex-direction: column; /* Stack trending items vertically */
+    height: auto; /* Auto height */
+    gap: 20px; /* Space between trending items */
+    padding: 15px; /* Padding around trending section */
+  }
+
+  .trending-sec .flex {
+    flex-direction: column; /* Stack flex items vertically */
+    gap: 20px; /* Space between flex items */
+  }
+
+  .left-right-change button {
+    margin-right: 15px; /* Right margin for buttons */
+    margin-left: 15px; /* Left margin for buttons */
+  }
+
+  .header-post-sec {
+    height: auto; /* Auto height for header post section */
+  }
+
+  .h-posts {
+    display: block; /* Show header posts */
+  }
+
+  .big-post {
+    display: none !important; /* Hide big post */
+  }
+
+  .g-post h2 {
+    font-size: 12px; /* Set font size for g-post heading */
+  }
+
+  .all-main-post {
+    flex-direction: column; /* Stack main posts vertically */
+  }
+
+  .left-sec {
+    width: 100%; /* Full width for left section */
+    padding: 5px; /* Add padding */
+  }
+
+  .right-sec {
+    width: 100%; /* Full width for right section */
+  }
+
+  .social-btn i {
+    padding: 10px; /* Add padding to social button icons */
+    border-top-left-radius: 5px; /* Round top left corner */
+    border-bottom-left-radius: 5px; /* Round bottom left corner */
+  }
+
+  .posts {
+    flex-direction: column; /* Stack posts vertically */
+    height: auto; /* Auto height */
+  }
+
+  .post {
+    width: 100%; /* Full width for individual posts */
+  }
+
+  .more-post {
+    width: 100%; /* Full width for more posts section */
+    gap: 30px; /* Space between more posts */
+  }
+
+  .new-post-info {
+    padding: 0 10px; /* Horizontal padding for new post info */
+  }
+
+  .review-posts {
+    width: 100%; /* Full width for review posts */
+    height: 100%; /* Full height for review posts */
+  }
+
+  .review-posts .rev-post {
+    width: 100%; /* Full width for individual review posts */
+    height: auto; /* Auto height for review posts */
+  }
+
+  .rev-post-img img {
+    height: 100%; /* Set image height to fill the container */
+  }
+
+  .gadget-sec {
+    flex-direction: column; /* Stack gadget items vertically */
+    padding: 5px; /* Add padding around gadget section */
+  }
+
+  .gadgets,
+  .laptops {
+    width: 100%; /* Full width for gadgets and laptops sections */
+  }
+
+  .latest-posts {
+    flex-direction: column; /* Stack latest posts vertically */
+  }
+
+  .latest-posts .latest-post-img {
+    width: 100%; /* Full width for latest post images */
+    margin-right: 15px; /* Right margin for latest post images */
+  }
+
+  .latest-posts .post-info {
+    padding: 10px 0; /* Vertical padding for post info */
+  }
+
+  .social {
+    height: auto; /* Auto height for social section */
+  }
+
+  .popular-post {
+    width: 100%; /* Full width for popular posts */
+    height: auto; /* Auto height for popular posts */
+    gap: 20px; /* Space between popular posts */
+  }
+
+  footer {
+    height: auto; /* Auto height for footer */
+  }
+
+  .footer-sec {
+    padding: 40px 30px; /* Padding for footer section */
+  }
+
+  .first-footer {
+    flex-direction: column; /* Stack first footer items vertically */
+    gap: 30px; /* Space between first footer items */
+  }
+
+  .footer-categories-bx,
+  .f-posts-box,
+  .f-popu-post {
+    width: 100%; /* Full width for footer boxes */
+    border-bottom: 1px solid #222; /* Bottom border for footer boxes */
+    padding-bottom: 10px; /* Bottom padding for footer boxes */
+  }
+
+  .second-footer {
+    flex-direction: column; /* Stack second footer items vertically */
+    gap: 20px; /* Space between second footer items */
+    text-align: center; /* Center align text in second footer */
+  }
+
+  .third-footer {
+    color: #fff; /* White text color for third footer */
+    flex-direction: column; /* Stack third footer items vertically */
+    gap: 20px; /* Space between third footer items */
+  }
+}
