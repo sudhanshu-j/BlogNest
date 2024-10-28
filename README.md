@@ -1,4 +1,4 @@
-# TechTales
+ # TechTales
 
 Welcome to **TechTales**, a blogging website dedicated to sharing insightful articles on technology, health, and lifestyle. This project is developed using **HTML**, **CSS**, and **JavaScript**, with a focus on creating a fully responsive and visually appealing user interface.
 
@@ -19,6 +19,8 @@ Welcome to **TechTales**, a blogging website dedicated to sharing insightful art
 - [Usage](#usage)
 
 - [ScreenShots](#screenshots)
+
+- [File Structure](#filestructure)
 
 - [Contributing](#contributing)
 
@@ -119,6 +121,27 @@ Explore the various sections of the website and engage with the content. You can
 ## ScreenShots
 
 ![TechTales](https://github.com/user-attachments/assets/17dbf7e5-f72c-447b-b34e-d35cd2ed307f)
+
+## File Structure
+
+- **TechTales/**
+
+- ├── README.md                 # Project documentation
+- ├── index.html                # Main HTML file
+- ├── css/                      # Directory for CSS files
+- │   ├── styles.css            # Main stylesheet
+- │   └── responsive.css        # Responsive styles
+- │   └── toggle.css            # Dark/Light Theme Toggle styles
+- ├── js/                       # Directory for JavaScript files
+- │   ├── main.js               # Main JavaScript file
+- │   └── toggle.js             # Dark/Light Theme Toggle File
+- │   └── back-to-top.js        # Scroll up button functionality
+- ├── img/                      # Directory for images
+- │   ├── logo.png              # Project logo
+- │   ├── h-post-1.jpg         # Example post image
+- │   └── g-post-1.jpg         # Another example post image
+
+
 
 ## Contributing
 
