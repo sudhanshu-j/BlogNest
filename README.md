@@ -125,7 +125,7 @@ Explore the various sections of the website and engage with the content. You can
 ## File Structure
 
 - **TechTales/**
-      ```
+      
       - ├── README.md                 # Project documentation
       - ├── index.html                # Main HTML file
       - ├── css/                      # Directory for CSS files
