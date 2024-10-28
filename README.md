@@ -125,7 +125,7 @@ Explore the various sections of the website and engage with the content. You can
 ## File Structure
 
 - **TechTales/**
-      ```bash
+      ```
       - ├── README.md                 # Project documentation
       - ├── index.html                # Main HTML file
       - ├── css/                      # Directory for CSS files
@@ -138,11 +138,9 @@ Explore the various sections of the website and engage with the content. You can
       - │   └── back-to-top.js        # Scroll up button functionality
       - ├── img/                      # Directory for images
       - │   ├── logo.png              # Project logo
-      - │   ├── h-post-1.jpg         # Example post image
-      - │   └── g-post-1.jpg         # Another example post image
-      ```
-
-
+      - │   ├── h-post-1.jpg          # Example post image
+      - │   └── g-post-1.jpg          # Another example post image
+      
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to TechTales, please follow these guidelines:
