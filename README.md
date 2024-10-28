@@ -132,4 +132,10 @@ Contributions are welcome! If you would like to contribute to TechTales, please 
 
 4. Push your branch and submit a pull request.
 
+## Contact
+
+- **GitHub:** [Sudhanshu Jha](https://github.com/sudhanshu-j)
+
+- **Gmail:** [Sudhanshu Jha](Sudhanshujha164@gmail.com)
+
 Thank you for checking out TechTales! We hope you enjoy reading and exploring the world of technology with us!
